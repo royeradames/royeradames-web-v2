@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+/* Import Angular Material's pre-built theme */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* CSS Custom Properties for consistent theming */
+:root {
+  --primary-color: #3f51b5;
+  --accent-color: #e91e63;
+  --warn-color: #f44336;
+  --background-color: #fafafa;
+  --surface-color: #ffffff;
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.54);
+  --text-disabled: rgba(0, 0, 0, 0.38);
+}
+
+/* Custom Material component overrides */
+.mat-mdc-card {
+  margin: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mat-mdc-button {
+  margin: 0.5rem;
+}
+
+.mat-mdc-raised-button {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mat-toolbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure proper spacing and layout */
+.mat-mdc-tab-group {
+  margin-top: 1rem;
+}
+
+.mat-mdc-form-field {
+  margin-bottom: 1rem;
+}
+
+/* Custom animations for better UX */
+.mat-mdc-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.mat-mdc-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mat-mdc-button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mat-mdc-card {
+    margin: 0.5rem;
+  }
+
+  .mat-mdc-button {
+    margin: 0.25rem;
+  }
+}

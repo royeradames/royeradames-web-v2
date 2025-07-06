@@ -1,0 +1,240 @@
+<!-- Material Toolbar -->
+<mat-toolbar color="primary">
+  <mat-icon>home</mat-icon>
+  <span class="spacer">Material UI Demo</span>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" matTooltip="Options">
+    <mat-icon
+      [matBadge]="notifications"
+      matBadgeColor="warn"
+      aria-hidden="false"
+      >notifications</mat-icon
+    >
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>account_circle</mat-icon>
+      <span>Profile</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>logout</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
+
+<div class="container">
+  <!-- Welcome Section -->
+  <mat-card class="welcome-card">
+    <mat-card-header>
+      <mat-card-title>
+        <mat-icon>rocket_launch</mat-icon>
+        Welcome to Angular Material {{ getAngularVersion() }}
+      </mat-card-title>
+      <mat-card-subtitle
+        >Complete Material Design Components Showcase</mat-card-subtitle
+      >
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        This application demonstrates various Angular Material components with
+        SSR support.
+      </p>
+
+      <!-- Progress Bar -->
+      <mat-progress-bar
+        mode="determinate"
+        [value]="sliderValue"
+      ></mat-progress-bar>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="showSnackbar('Welcome to Material UI!')"
+      >
+        <mat-icon>thumb_up</mat-icon>
+        Get Started
+      </button>
+      <button mat-stroked-button color="accent">Learn More</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <!-- Tabs Section -->
+  <mat-card class="section-card">
+    <mat-tab-group>
+      <!-- Forms Tab -->
+      <mat-tab label="Forms & Inputs">
+        <div class="tab-content">
+          <h3>Form Controls</h3>
+
+          <div class="form-row">
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input
+                matInput
+                [formControl]="emailControl"
+                placeholder="Enter your email"
+              />
+              <mat-icon matSuffix>email</mat-icon>
+              <mat-hint>We'll never share your email</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Favorite Color</mat-label>
+              <mat-select [formControl]="favoriteColor">
+                <mat-option *ngFor="let color of colors" [value]="color">
+                  {{ color }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div class="form-row">
+            <mat-checkbox [(ngModel)]="checked">Check me!</mat-checkbox>
+
+            <mat-radio-group [(ngModel)]="selectedOption">
+              <mat-radio-button value="option1">Option 1</mat-radio-button>
+              <mat-radio-button value="option2">Option 2</mat-radio-button>
+            </mat-radio-group>
+          </div>
+
+          <div class="form-row">
+            <label>Slider Value: {{ sliderValue }}</label>
+            <mat-slider min="0" max="100" step="1">
+              <input matSliderThumb [(ngModel)]="sliderValue" />
+            </mat-slider>
+          </div>
+        </div>
+      </mat-tab>
+
+      <!-- Components Tab -->
+      <mat-tab label="Components">
+        <div class="tab-content">
+          <h3>Interactive Components</h3>
+
+          <!-- Chips -->
+          <div class="chips-section">
+            <h4>Technology Stack</h4>
+            <mat-chip-set>
+              <mat-chip
+                *ngFor="let chip of chips"
+                [removable]="true"
+                (removed)="removeChip(chip)"
+              >
+                {{ chip }}
+                <mat-icon matChipRemove>cancel</mat-icon>
+              </mat-chip>
+            </mat-chip-set>
+          </div>
+
+          <!-- Buttons Showcase -->
+          <div class="buttons-section">
+            <h4>Button Variants</h4>
+            <button mat-button>Basic</button>
+            <button mat-raised-button color="primary">Raised Primary</button>
+            <button mat-stroked-button color="accent">Stroked Accent</button>
+            <button mat-flat-button color="warn">Flat Warn</button>
+            <button mat-fab color="primary" matTooltip="Floating Action">
+              <mat-icon>add</mat-icon>
+            </button>
+            <button mat-mini-fab color="accent">
+              <mat-icon>edit</mat-icon>
+            </button>
+          </div>
+
+          <!-- Progress Indicators -->
+          <div class="progress-section">
+            <h4>Progress Indicators</h4>
+            <mat-progress-spinner
+              mode="indeterminate"
+              diameter="50"
+            ></mat-progress-spinner>
+            <mat-progress-bar
+              mode="buffer"
+              value="60"
+              bufferValue="80"
+            ></mat-progress-bar>
+          </div>
+        </div>
+      </mat-tab>
+
+      <!-- Lists Tab -->
+      <mat-tab label="Lists & Navigation">
+        <div class="tab-content">
+          <mat-list>
+            <h3 mat-subheader>Features</h3>
+
+            <mat-list-item>
+              <mat-icon matListItemIcon>check_circle</mat-icon>
+              <div matListItemTitle>Server-Side Rendering</div>
+              <div matListItemLine>Pre-render pages for better SEO</div>
+            </mat-list-item>
+
+            <mat-list-item>
+              <mat-icon matListItemIcon>speed</mat-icon>
+              <div matListItemTitle>Static Generation</div>
+              <div matListItemLine>Fast loading with pre-built HTML</div>
+            </mat-list-item>
+
+            <mat-list-item>
+              <mat-icon matListItemIcon>palette</mat-icon>
+              <div matListItemTitle>Material Design</div>
+              <div matListItemLine>Beautiful, accessible components</div>
+            </mat-list-item>
+
+            <mat-divider></mat-divider>
+
+            <mat-list-item>
+              <mat-icon matListItemIcon>code</mat-icon>
+              <div matListItemTitle>TypeScript</div>
+              <div matListItemLine>Type-safe development experience</div>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+
+  <!-- Expansion Panel -->
+  <mat-card class="section-card">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-icon>info</mat-icon>
+          Project Information
+        </mat-panel-title>
+        <mat-panel-description> Click to expand details </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <p>This Angular project includes:</p>
+      <mat-list>
+        <mat-list-item>✅ Angular {{ getAngularVersion() }}</mat-list-item>
+        <mat-list-item>✅ Angular Material Components</mat-list-item>
+        <mat-list-item>✅ Server-Side Rendering (SSR)</mat-list-item>
+        <mat-list-item>✅ Static Site Generation</mat-list-item>
+        <mat-list-item>✅ TypeScript Support</mat-list-item>
+        <mat-list-item>✅ Responsive Design</mat-list-item>
+      </mat-list>
+
+      <mat-action-row>
+        <button
+          mat-button
+          color="primary"
+          (click)="showSnackbar('Thanks for exploring!')"
+        >
+          <mat-icon>thumb_up</mat-icon>
+          Awesome!
+        </button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-card>
+</div>
