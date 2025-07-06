@@ -2,6 +2,64 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
 
+## Prerequisites
+
+Before you can run this project, you need to have the following installed:
+
+- **Node.js** (version 18.19.1 or later): Download from [nodejs.org](https://nodejs.org/)
+- **npm** (comes with Node.js)
+
+## Installing Angular
+
+To work with this project, you'll need the Angular CLI installed globally:
+
+```bash
+npm install -g @angular/cli
+```
+
+You can verify your Angular CLI installation by running:
+
+```bash
+ng version
+```
+
+## How This Project Was Generated
+
+This project was created using the Angular CLI with the following command:
+
+```bash
+ng new royeradames-web-v2 --directory=. --routing --style=css --package-manager=npm
+```
+
+**Command breakdown:**
+
+- `ng new royeradames-web-v2` - Creates a new Angular project named "royeradames-web-v2"
+- `--directory=.` - Creates the project in the current directory instead of a new subdirectory
+- `--routing` - Adds Angular Router for navigation between views
+- `--style=css` - Uses CSS for styling (default option)
+- `--package-manager=npm` - Uses npm as the package manager
+
+**Note:** The CLI also prompted for additional options:
+
+- **Zoneless application**: Selected "Yes" for better performance (Developer Preview)
+- **Server-Side Rendering (SSR)**: Selected "Yes" for better SEO and performance
+
+To create a similar project in a new directory, you would run:
+
+```bash
+ng new your-project-name --routing --style=css --package-manager=npm
+```
+
+## Project Setup
+
+1. Clone this repository
+2. Navigate to the project directory
+3. Install project dependencies:
+
+```bash
+npm install
+```
+
 ## Development server
 
 To start a local development server, run:
