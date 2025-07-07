@@ -1,3 +1,44 @@
-<section>
-  <h1>Main page</h1>
+<section class="main">
+  <!-- <h1>Main page</h1> -->
+  <header>
+    <!-- <app-main-navigation
+      [navigationLinks]="headerData.navigation.navigationLinks"
+    ></app-main-navigation> -->
+    <nav>
+      <a [routerLink]="['/']" routerLinkActive="router-link-active">
+        <img
+          [src]="`assets/svg/${headerData.navigation.logo.image}`"
+          [alt]="headerData.navigation.logo.alt"
+          [width]="headerData.navigation.logo.width"
+          [height]="headerData.navigation.logo.height"
+        />
+      </a>
+      <ng-container *ngFor="let aLink of headerData.navigation.navigationLinks"
+        ><a [routerLink]="[aLink.link]" routerLinkActive="router-link-active"
+          >{{ aLink.name }}
+        </a>
+      </ng-container>
+    </nav>
+    <h1>{{ headerData.hero.title }}</h1>
+
+    @if(!!headerData.hero.titleDescription?.length){
+    <p class="sr-only">Positions</p>
+
+    @for (item of headerData.hero.titleDescription; track $index) {
+    <ul>
+      <li>
+        <div>{{ item.position }}</div>
+
+        @if (!!item?.nestedPositions?.length) {
+        <ul>
+          @for (item of item.nestedPositions; track $index) {
+          <li>{{ item }}</li>
+          }
+        </ul>
+
+        }
+      </li>
+    </ul>
+    } }
+  </header>
 </section>
