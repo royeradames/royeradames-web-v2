@@ -1,0 +1,84 @@
+<section class="hero">
+  <img
+    [src]="`assets/images/${headerData.hero.image.name}`"
+    [alt]="headerData.hero.image.alt"
+    [height]="headerData.hero.image.height"
+    [width]="headerData.hero.image.width"
+  />
+  <div class="hero__content">
+    <header>
+      <nav>
+        <a [routerLink]="['/']" routerLinkActive="router-link-active">
+          <img
+            [src]="`assets/svg/${headerData.navigation.logo.image}`"
+            [alt]="headerData.navigation.logo.alt"
+            [width]="headerData.navigation.logo.width"
+            [height]="headerData.navigation.logo.height"
+          />
+        </a>
+        <ng-container
+          *ngFor="let aLink of headerData.navigation.navigationLinks"
+          ><a [routerLink]="[aLink.link]" routerLinkActive="router-link-active"
+            >{{ aLink.name }}
+          </a>
+        </ng-container>
+      </nav>
+      <h1>{{ headerData.hero.title }}</h1>
+
+      @if(!!headerData.hero.titleDescription.length){
+      <p class="sr-only">Positions</p>
+
+      @for (item of headerData.hero.titleDescription; track $index) {
+      <ul>
+        <li>
+          <div>{{ item.position }}</div>
+
+          @if (!!item?.nestedPositions?.length) {
+          <ul>
+            @for (item of item.nestedPositions; track $index) {
+            <li>{{ item }}</li>
+            }
+          </ul>
+
+          }
+        </li>
+      </ul>
+      } }
+
+      <p>
+        {{ headerData.hero.message.text }}
+        <strong>{{ headerData.hero.message.focusText }}</strong>
+      </p>
+    </header>
+
+    <div>
+      <section class="current-technologies">
+        <ul>
+          @for (item of headerData.hero.currentTechnology; track $index) {
+          <li>
+            {{ item.icon }}
+            <div>
+              <a href="#">{{ item.title }}</a>
+            </div>
+            <div>{{ item.description }}</div>
+          </li>
+          }
+        </ul>
+      </section>
+
+      <section>
+        <ul>
+          @for (item of headerData.hero.contact; track $index) {
+          <li>
+            {{ item.icon }}
+            <div>
+              {{ item.title }}
+            </div>
+            <div>{{ item.contactInfo }}</div>
+          </li>
+          }
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>

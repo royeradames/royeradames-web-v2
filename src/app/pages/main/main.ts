@@ -1,8 +1,8 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { MainNavigation } from './components/main-navigation';
 import headerData from '../../shared/data/header.data';
+import { Hero } from './components/hero/hero';
 @Component({
   selector: 'page-main',
   templateUrl: './main.html',
@@ -11,6 +11,7 @@ import headerData from '../../shared/data/header.data';
     // MainNavigation,
     RouterLink,
     NgFor,
+    Hero,
   ],
 })
 export class Main {

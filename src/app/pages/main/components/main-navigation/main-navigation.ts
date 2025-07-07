@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { TNavigationLinks } from '../../../shared/data/header.data';
 import { NgFor } from '@angular/common';
 
 @Component({
