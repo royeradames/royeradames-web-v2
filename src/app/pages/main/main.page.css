@@ -2,8 +2,7 @@
   min-height: 100vh;
   background-color: #232339;
   display: flex;
-  gap: 16px;
-  flex-direction: row-reverse;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }

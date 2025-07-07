@@ -7,12 +7,8 @@ import projectGallery from '../../../../shared/data/project-gallery.data';
   selector: 'app-project-gallery',
   templateUrl: './project-gallery.html',
   styleUrl: './project-gallery.css',
-  imports: [
-    // MainNavigation,
-    RouterLink,
-    NgFor,
-  ],
+  imports: [],
 })
 export class ProjectGallery {
-  public ProjectGallery = projectGallery;
+  public projectGallery = projectGallery;
 }
