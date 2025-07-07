@@ -43,7 +43,44 @@ const headerData = {
       text: 'I value the development and design that ',
       focusText: 'values your needs',
     },
-    currentTechnology: [],
+    currentTechnology: [
+      {
+        icon: 'angular',
+        title: 'Angular',
+        description: 'JavaScript UI framework. Commonly use in legacy code',
+      },
+      {
+        icon: 'nextjs',
+        title: 'Next.js',
+        description: 'React Meta Framework',
+      },
+      {
+        icon: 'sass',
+        title: 'Sass',
+        description: 'CSS with TS features',
+      },
+      {
+        icon: 'microsoft-teams',
+        title: 'Microsoft Teams',
+        description: 'The office. Texting, videos, calendar, and group chat.',
+      },
+      {
+        icon: 'microsoft-azure',
+        title: 'Microsoft Azure',
+        description: 'Microsoft AWS',
+      },
+      {
+        icon: 'docker',
+        title: 'Docker',
+        description:
+          'Eliminates the issue of “it runs in my computer but not in yours',
+      },
+      {
+        icon: 'github',
+        title: 'Github',
+        description: 'Common place where our software lives',
+      },
+    ],
     contact: [
       {
         icon: 'email',
@@ -68,7 +105,7 @@ const headerData = {
     ],
     image: {
       alt: 'Royer Adames',
-      href: '',
+      name: 'hero-image.webp',
       height: 1108,
       width: 569,
     },

@@ -11,7 +11,6 @@ import headerData from '../../shared/data/header.data';
     // MainNavigation,
     RouterLink,
     NgFor,
-    NgIf,
   ],
 })
 export class Main {
