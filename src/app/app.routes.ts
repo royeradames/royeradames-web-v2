@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { MaterialDemoComponent } from './shared/components/material-demo/material-demo.component';
-import { Main } from './pages/main/main';
+import { MainPage } from './pages/main/main.page';
 
 export const routes: Routes = [
   {
@@ -10,7 +10,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    component: Main,
+    component: MainPage,
     title: 'Material UI Demo',
   },
   {

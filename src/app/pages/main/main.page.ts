@@ -5,8 +5,8 @@ import headerData from '../../shared/data/header.data';
 import { Hero } from './components/hero/hero';
 @Component({
   selector: 'page-main',
-  templateUrl: './main.html',
-  styleUrl: './main.css',
+  templateUrl: './main.page.html',
+  styleUrl: './main.page.css',
   imports: [
     // MainNavigation,
     RouterLink,
@@ -14,6 +14,6 @@ import { Hero } from './components/hero/hero';
     Hero,
   ],
 })
-export class Main {
+export class MainPage {
   public headerData = headerData;
 }
