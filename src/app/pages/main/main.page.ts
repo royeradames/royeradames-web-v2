@@ -7,12 +7,7 @@ import { Hero } from './components/hero/hero';
   selector: 'page-main',
   templateUrl: './main.page.html',
   styleUrl: './main.page.css',
-  imports: [
-    // MainNavigation,
-    RouterLink,
-    NgFor,
-    Hero,
-  ],
+  imports: [Hero],
 })
 export class MainPage {
   public headerData = headerData;
