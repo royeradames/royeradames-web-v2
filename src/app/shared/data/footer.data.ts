@@ -6,7 +6,7 @@ const footerData = {
     contactMessage: "Drop me an email:",
     contactEmail: "CONTACT@ROYERADAMES.COM",
   },
-  resumeinks: [
+  resumeLinks: [
     {
       name: "Back to top",
       link: "#",

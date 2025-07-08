@@ -1,0 +1,19 @@
+<section class="footer">
+  <header class="footer__header">
+    <h2 class="footer__title">{{ footerData.callToAction.title }}</h2>
+    <p class="footer__message">{{ footerData.callToAction.message }}</p>
+    <p class="footer__contact-message">
+      {{ footerData.callToAction.contactMessage }}
+    </p>
+    <a
+      class="footer__contact-email"
+      href="mailto:{{ footerData.callToAction.contactEmail }}"
+      >{{ footerData.callToAction.contactEmail }}</a
+    >
+  </header>
+  <nav class="footer__resume-links">
+    @for (link of footerData.resumeLinks; track $index) {
+    <a class="footer__resume-link" [href]="link.link">{{ link.name }}</a>
+    }
+  </nav>
+</section>
