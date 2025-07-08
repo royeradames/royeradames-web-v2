@@ -1,0 +1,30 @@
+<section class="projects">
+  <h3 class="title">Projects</h3>
+  <div class="projects__content">
+    @for (project of projects; track $index) {
+    <div class="projects__item">
+      <img
+        [src]="`assets/images/${project.image}`"
+        [alt]="project.title"
+        class="projects__image"
+      />
+      <h4 class="projects__title">{{ project.title }}</h4>
+      @for (message of project.messageList; track $index) {
+      <p class="projects__message">
+        <strong class="projects__message-title">{{ message.title }}</strong
+        >:
+        <span class="projects__message-description">{{
+          message.description
+        }}</span>
+      </p>
+      }
+      <a [href]="project.link" target="_blank" class="projects__link"></a>
+    </div>
+    }
+  </div>
+  <footer>
+    <a routerLink="/projects" class="projects__footer-link"
+      >View All Projects</a
+    >
+  </footer>
+</section>

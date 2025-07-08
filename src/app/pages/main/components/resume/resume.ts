@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { Projects } from "./components/projects/projects";
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.html',
   styleUrl: './resume.css',
-  imports: [],
+  imports: [Projects],
 })
 export class Resume {}

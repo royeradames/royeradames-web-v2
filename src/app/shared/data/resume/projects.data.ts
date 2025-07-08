@@ -1,6 +1,6 @@
 const projects = [
   {
-    image: "",
+    image: "universal-orlando.webp",
     title: "UNIVERSAL STUDIO ORLANDO WEBSITE",
     link: "https://www.universalorlando.com/web/en/us",
     messageList: [
@@ -17,7 +17,7 @@ const projects = [
     ],
   },
   {
-    image: "",
+    image: "mitsubishi-contract-risk-management.webp",
     title: "MITSUBISHI CONTRACT RISK MANAGEMENT PLATFORM",
     link: "",
     messageList: [
