@@ -20,7 +20,7 @@ const headerData = {
     menuLinks: [
       {
         name: 'Who am I?',
-        link: '#who-am-i',
+        link: '/',
       },
       {
         name: 'Publications',
