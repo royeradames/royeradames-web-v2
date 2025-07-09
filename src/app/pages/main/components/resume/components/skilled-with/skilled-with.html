@@ -9,10 +9,13 @@
           [href]="skilledWith.link"
           target="_blank"
         >
-          <img
-            [src]="`assets/svgs/${skilledWith.icon}.svg`"
+          <app-image
+            [name]="skilledWith.icon"
             [alt]="skilledWith.icon"
-          />
+            [height]="32"
+            [width]="32"
+            [type]="'icons'"
+          ></app-image>
           <h3 class="skilled-with__item-title">
             {{ skilledWith.title }}
           </h3>
