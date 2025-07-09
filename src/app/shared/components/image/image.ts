@@ -7,7 +7,7 @@ import { Component, input } from '@angular/core';
   imports: [],
 })
 export class Image {
-  src = input.required<string>();
+  name = input.required<string>();
   type = input.required<'companies-logo' | 'icons' | 'images'>();
   alt = input.required<string>();
   width = input.required<number>();

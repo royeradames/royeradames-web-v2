@@ -1,7 +1,7 @@
 <img
-  [src]="`assets/${type()}/${src()}`"
+  [src]="`assets/${type()}/${name()}`"
   [alt]="alt()"
   [width]="width()"
   [height]="height()"
-  [attr.aria-hidden]="ariaHidden()"
+  [attr.aria-hidden]="ariaHidden() || type() === 'icons'"
 />

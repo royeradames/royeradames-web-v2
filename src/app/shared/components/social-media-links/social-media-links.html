@@ -6,13 +6,14 @@
     [title]="link.name"
     target="_blank"
   >
-    <img
-      [src]="`assets/svgs/${link.icon}`"
+    <app-image
+      [name]="link.icon"
       [alt]="link.name"
-      [width]="24"
       [height]="24"
-      aria-hidden="true"
-    />
+      [width]="24"
+      [type]="'icons'"
+      [ariaHidden]="true"
+    ></app-image>
     <span class="sr-only">{{ link.name }}</span>
   </a>
   }

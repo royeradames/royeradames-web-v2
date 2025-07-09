@@ -1,11 +1,11 @@
 const headerData = {
   navigation: {
     logo: {
-      image: 'royeradames-logo.svg',
+      name: 'royeradames-logo.svg',
       link: '/',
       alt: 'Royer Adames Logo',
-      width: '121',
-      height: '94',
+      width: 121,
+      height: 94,
     },
     navigationLinks: [
       {

@@ -1,20 +1,22 @@
 <section class="hero">
-  <img
-    [src]="`assets/images/${headerData.hero.image.name}`"
+  <app-image
+    [name]="headerData.hero.image.name"
     [alt]="headerData.hero.image.alt"
     [height]="headerData.hero.image.height"
     [width]="headerData.hero.image.width"
-  />
+    [type]="'images'"
+  ></app-image>
   <div class="hero__content">
     <header>
       <nav>
         <a [routerLink]="['/']" routerLinkActive="router-link-active">
-          <img
-            [src]="`assets/svgs/${headerData.navigation.logo.image}`"
+          <app-image
+            [name]="headerData.navigation.logo.name"
             [alt]="headerData.navigation.logo.alt"
-            [width]="headerData.navigation.logo.width"
             [height]="headerData.navigation.logo.height"
-          />
+            [width]="headerData.navigation.logo.width"
+            [type]="'companies-logo'"
+          ></app-image>
         </a>
         @for (link of headerData.navigation.navigationLinks; track $index) {
         <a [routerLink]="[link.link]" routerLinkActive="router-link-active"
@@ -55,7 +57,13 @@
         <ul>
           @for (item of headerData.hero.currentTechnology; track $index) {
           <li>
-            {{ item.icon }}
+            <app-image
+              [name]="item.icon"
+              [alt]="item.title"
+              [height]="34"
+              [width]="34"
+              [type]="'icons'"
+            ></app-image>
             <div>
               <a href="#">{{ item.title }}</a>
             </div>
@@ -69,7 +77,13 @@
         <ul>
           @for (item of headerData.hero.contact; track $index) {
           <li>
-            {{ item.icon }}
+            <app-image
+              [name]="item.icon"
+              [alt]="item.title"
+              [height]="34"
+              [width]="34"
+              [type]="'icons'"
+            ></app-image>
             <div>
               {{ item.title }}
             </div>

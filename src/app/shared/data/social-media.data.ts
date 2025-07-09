@@ -9,27 +9,27 @@ const socialMediaList = [
   {
     name: 'Github',
     url: socialMedia.github,
-    icon: 'github',
+    icon: 'github-icon.svg',
   },
   {
     name: 'LinkedIn',
     url: socialMedia.linkedin,
-    icon: 'linkedin',
+    icon: 'linkedin-icon.svg',
   },
   {
     name: 'Email',
     url: socialMedia.email,
-    icon: 'email',
+    icon: 'email-icon.svg',
   },
   {
     name: 'Blog',
     url: socialMedia.blog,
-    icon: 'blog',
+    icon: 'medium-icon.svg',
   },
   {
     name: 'Frontend Mentor',
     url: socialMedia.frontendmentor,
-    icon: 'frontendmentor',
+    icon: 'frontend-mentor-icon.svg',
   },
 ];
 
