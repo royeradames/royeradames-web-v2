@@ -1,0 +1,32 @@
+<section class="education">
+  <h2 class="experience__title">Education</h2>
+  <div class="experience__list">
+    @for (education of education; track $index) {
+    <section class="experience__item">
+      <header class="experience__item-header">
+        <img
+          [src]="`assets/images/${education.logo}.svg`"
+          [alt]="education.logo"
+        />
+        <div class="experience__item-content">
+          <h3 class="experience__item-title">
+            {{ education.title }}
+          </h3>
+          <p class="experience__item-date">
+            Calendar icon {{ education.startDate }} - {{ education.endDate }}
+          </p>
+        </div>
+      </header>
+      <div class="experience__item-achievements">
+        @for (achievement of education.achievements; track $index) {
+        <p class="experience__item-achievement">{{ achievement }}</p>
+        }
+      </div>
+    </section>
+    }
+  </div>
+
+  <footer class="experience__footer">
+    <a routerLink="/education" class="experience__link">View All Education</a>
+  </footer>
+</section>

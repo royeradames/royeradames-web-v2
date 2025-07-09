@@ -1,8 +1,9 @@
 const education = [
   {
+    logo: "ppl-logo",
     title: "Bloom Institute of Technology",
     startDate: "Aug 2020",
-    endDate: "Sept 2023",
+    endDate: "current",
     achievements: [
       "Enhanced Agile and Scrum methodologies, focusing on adaptability and continuous improvement.",
       "Acquired proficiency in Tridion CMS for collaborative content and knowledge management.",
@@ -12,6 +13,7 @@ const education = [
   },
 
   {
+    logo: "echelon-logo",
     title: "Echelon Fitness In-house Training",
     startDate: "Jan 2022",
     endDate: "May 2023",
@@ -23,6 +25,7 @@ const education = [
   },
 
   {
+    logo: "university-logo",
     title: "Bloom Institute of Technology",
     startDate: "Aug 2020",
     endDate: "",

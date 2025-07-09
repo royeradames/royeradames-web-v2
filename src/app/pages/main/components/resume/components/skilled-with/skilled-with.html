@@ -1,0 +1,27 @@
+<section class="skilled-with">
+  <h2 class="skilled-with__title">Skilled With</h2>
+  <div class="skilled-with__list">
+    @for (skilledWith of skilledWith; track $index) {
+    <section class="skilled-with__item">
+      <header class="skilled-with__item-header">
+        <a
+          class="skilled-with__item-link"
+          [href]="skilledWith.link"
+          target="_blank"
+        >
+          <img
+            [src]="`assets/svgs/${skilledWith.icon}.svg`"
+            [alt]="skilledWith.icon"
+          />
+          <h3 class="skilled-with__item-title">
+            {{ skilledWith.title }}
+          </h3>
+        </a>
+      </header>
+      <p class="skilled-with__item-description">
+        {{ skilledWith.description }}
+      </p>
+    </section>
+    }
+  </div>
+</section>
