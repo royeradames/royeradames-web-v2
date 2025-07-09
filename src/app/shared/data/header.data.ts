@@ -88,11 +88,6 @@ const headerData = {
         contactInfo: 'CONTACT@ROYERADAMES.COM',
       },
       {
-        icon: 'phone',
-        title: 'Phone',
-        contactInfo: '(407)801-9345',
-      },
-      {
         icon: 'Text',
         title: 'Text',
         contactInfo: '(407)801-9345',
