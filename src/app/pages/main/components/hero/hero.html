@@ -16,12 +16,11 @@
             [height]="headerData.navigation.logo.height"
           />
         </a>
-        <ng-container
-          *ngFor="let aLink of headerData.navigation.navigationLinks"
-          ><a [routerLink]="[aLink.link]" routerLinkActive="router-link-active"
-            >{{ aLink.name }}
-          </a>
-        </ng-container>
+        @for (link of headerData.navigation.navigationLinks; track $index) {
+        <a [routerLink]="[link.link]" routerLinkActive="router-link-active"
+          >{{ link.name }} </a
+        >}
+        <app-social-media-links></app-social-media-links>
       </nav>
       <h1>{{ headerData.hero.title }}</h1>
 

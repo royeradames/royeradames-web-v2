@@ -1,0 +1,19 @@
+<div class="social-media-links" aria-label="Social Media Links">
+  @for (link of socialMediaList; track $index) {
+  <a
+    class="social-media-links__link"
+    [href]="link.url"
+    [title]="link.name"
+    target="_blank"
+  >
+    <img
+      [src]="`assets/svgs/${link.icon}`"
+      [alt]="link.name"
+      [width]="24"
+      [height]="24"
+      aria-hidden="true"
+    />
+    <span class="sr-only">{{ link.name }}</span>
+  </a>
+  }
+</div>
