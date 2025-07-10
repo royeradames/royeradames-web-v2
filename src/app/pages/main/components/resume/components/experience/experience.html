@@ -8,10 +8,13 @@
           Calendar icon {{ experience.startDate }} - {{ experience.endDate }}
         </p>
         <div class="experience__item-company">
-          <img
-            [src]="`assets/images/${experience.icon}.svg`"
-            [alt]="experience.icon"
-          />
+          <app-image
+            [name]="experience.companyLogo.name"
+            [alt]="experience.companyLogo.name"
+            [height]="experience.companyLogo.height"
+            [width]="experience.companyLogo.width"
+            [type]="'companies-logo'"
+          ></app-image>
           <div class="experience__item-details">
             <p class="experience__item-title">
               {{ experience.title }}
