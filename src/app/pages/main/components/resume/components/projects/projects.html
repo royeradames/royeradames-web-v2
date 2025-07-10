@@ -3,11 +3,15 @@
   <div class="projects__content">
     @for (project of projects; track $index) {
     <div class="projects__item">
-      <img
-        [src]="`assets/images/${project.image}`"
+      <!-- @if (project.image) {
+      <app-image
+        [name]="project.image"
         [alt]="project.title"
-        class="projects__image"
-      />
+        [height]="project.image?.height"
+        [width]="project.image?.width"
+        [type]="'images'"
+      ></app-image>
+      } -->
       <h4 class="projects__title">{{ project.title }}</h4>
       @for (message of project.messageList; track $index) {
       <p class="projects__message">
