@@ -4,10 +4,16 @@
     @for (education of education; track $index) {
     <section class="experience__item">
       <header class="experience__item-header">
-        <img
-          [src]="`assets/images/${education.logo}.svg`"
-          [alt]="education.logo"
-        />
+        @if (education.logo) {
+        <app-image
+          [name]="education.logo.name"
+          [alt]="education.logo.name"
+          [height]="education.logo.height"
+          [width]="education.logo.width"
+          [type]="'companies-logo'"
+        ></app-image>
+        }
+
         <div class="experience__item-content">
           <h3 class="experience__item-title">
             {{ education.title }}
