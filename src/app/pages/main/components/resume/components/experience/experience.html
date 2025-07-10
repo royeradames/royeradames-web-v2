@@ -8,6 +8,7 @@
           Calendar icon {{ experience.startDate }} - {{ experience.endDate }}
         </p>
         <div class="experience__item-company">
+          @if (experience.companyLogo) {
           <app-image
             [name]="experience.companyLogo.name"
             [alt]="experience.companyLogo.name"
@@ -15,6 +16,7 @@
             [width]="experience.companyLogo.width"
             [type]="'companies-logo'"
           ></app-image>
+          }
           <div class="experience__item-details">
             <p class="experience__item-title">
               {{ experience.title }}

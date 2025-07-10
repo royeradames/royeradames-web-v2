@@ -75,11 +75,6 @@ const experience = [
   {
     startDate: 'Jan 2021',
     endDate: 'Jun 2021',
-    companyLogo: {
-      name: 'royeradames-logo.svg',
-      height: 94,
-      width: 121,
-    },
     title: 'Software Developer',
     companyName: 'Reclaim LLC',
     location: 'Orlando, FL',
