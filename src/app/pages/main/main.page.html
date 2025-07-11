@@ -1,8 +1,30 @@
-<mat-sidenav-container class="example-container" [hasBackdrop]="true">
-  <mat-sidenav #drawer [mode]="'side'">
-    <app-navigation-links></app-navigation-links>
-    <app-resume-links></app-resume-links>
-    <app-social-media-links></app-social-media-links>
+<mat-sidenav-container class="mobile-menu-container" [hasBackdrop]="true">
+  <mat-sidenav
+    #drawer
+    [mode]="'over'"
+    position="end"
+    [fixedInViewport]="true"
+    [fixedTopGap]="0"
+    [fixedBottomGap]="0"
+    [position]="'start'"
+  >
+    <section class="mobile-menu-content">
+      <header class="mobile-menu-header">
+        <h2>Menu</h2>
+        <button
+          mat-icon-button
+          (click)="drawer.close()"
+          aria-label="Close menu"
+        >
+          ✕
+        </button>
+      </header>
+      <nav class="mobile-menu-links">
+        <app-navigation-links></app-navigation-links>
+        <app-resume-links></app-resume-links>
+        <app-social-media-links></app-social-media-links>
+      </nav>
+    </section>
   </mat-sidenav>
   <mat-sidenav-content>
     <main class="main">

@@ -12,8 +12,13 @@
         <app-navigation-links></app-navigation-links>
         <app-resume-links></app-resume-links>
         <app-social-media-links></app-social-media-links>
-        <button matButton="elevated" (click)="toggleDrawer()">
-          Toggle drawer
+        <button
+          mat-icon-button
+          class="mobile-menu-toggle"
+          (click)="toggleDrawer()"
+          aria-label="Open mobile menu"
+        >
+          ☰
         </button>
       </nav>
       <h1>{{ headerData.hero.title }}</h1>

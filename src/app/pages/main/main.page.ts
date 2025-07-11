@@ -7,6 +7,7 @@ import { ProjectGallery } from './components/project-gallery/project-gallery';
 import { Footer } from './components/footer/footer';
 import { Resume } from './components/resume/resume';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule, MatSidenav } from '@angular/material/sidenav';
@@ -25,6 +26,7 @@ import { MainPageService } from './main.page.service';
     Footer,
     Resume,
     MatButtonModule,
+    MatIconModule,
     MatSelectModule,
     MatFormFieldModule,
     MatSidenavModule,
