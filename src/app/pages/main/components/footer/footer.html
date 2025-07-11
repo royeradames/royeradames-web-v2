@@ -12,8 +12,6 @@
     >
   </header>
   <nav class="footer__resume-links">
-    @for (link of footerData.resumeLinks; track $index) {
-    <a class="footer__resume-link" [href]="link.link">{{ link.name }}</a>
-    }
+    <app-resume-links></app-resume-links>
   </nav>
 </section>

@@ -1,6 +1,18 @@
-<main class="main">
-  <app-hero></app-hero>
-  <app-project-gallery></app-project-gallery>
-  <app-resume></app-resume>
-  <app-footer></app-footer>
-</main>
+<mat-sidenav-container class="example-container" [hasBackdrop]="true">
+  <mat-sidenav #drawer [mode]="'side'">
+    <app-navigation-links></app-navigation-links>
+    <app-resume-links></app-resume-links>
+    <app-social-media-links></app-social-media-links>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button matButton="elevated" (click)="drawer.toggle()">
+      Toggle drawer
+    </button>
+    <main class="main">
+      <app-hero></app-hero>
+      <app-project-gallery></app-project-gallery>
+      <app-resume></app-resume>
+      <app-footer></app-footer>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

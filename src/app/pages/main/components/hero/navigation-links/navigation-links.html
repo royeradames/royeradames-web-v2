@@ -1,0 +1,13 @@
+<a [routerLink]="['/']" routerLinkActive="router-link-active">
+  <app-image
+    [name]="headerData.navigation.logo.name"
+    [alt]="headerData.navigation.logo.alt"
+    [height]="headerData.navigation.logo.height"
+    [width]="headerData.navigation.logo.width"
+    [type]="'companies-logo'"
+  ></app-image>
+</a>
+@for (link of headerData.navigation.navigationLinks; track $index) {
+<a [routerLink]="[link.link]" routerLinkActive="router-link-active"
+  >{{ link.name }} </a
+>}
