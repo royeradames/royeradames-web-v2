@@ -11,6 +11,8 @@ import { ResumeLinks } from '../../../../shared/components/resume-links/resume-l
 import { NavigationLinks } from './navigation-links/navigation-links';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MainPageService } from '../../main.page.service';
+
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.html',
@@ -36,4 +38,10 @@ export class Hero {
   public headerData = headerData;
 
   mode = new FormControl('over' as MatDrawerMode);
+
+  constructor(private mainPageService: MainPageService) {}
+
+  toggleDrawer(): void {
+    this.mainPageService.toggleDrawer();
+  }
 }
