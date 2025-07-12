@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { MaterialDemoComponent } from './shared/components/material-demo/material-demo.component';
+import { MaterialDemoComponent } from '@shared/components/material-demo/material-demo.component';
 import { MainPage } from './pages/main/main.page';
 
 export const routes: Routes = [

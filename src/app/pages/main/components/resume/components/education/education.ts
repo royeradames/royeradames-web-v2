@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import educationData from '@shared/data/resume/education.data';
-import { Image } from "../../../../../../shared/components/image/image";
+import { Image } from '@shared/components/image/image';
 
 @Component({
   selector: 'app-education',

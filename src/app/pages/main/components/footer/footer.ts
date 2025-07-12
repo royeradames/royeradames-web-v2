@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import footerData from '../../../../shared/data/footer.data';
-import { ResumeLinks } from '../../../../shared/components/resume-links/resume-links';
+import footerData from '@shared/data/footer.data';
+import { ResumeLinks } from '@shared/components/resume-links/resume-links';
 
 @Component({
   selector: 'app-footer',

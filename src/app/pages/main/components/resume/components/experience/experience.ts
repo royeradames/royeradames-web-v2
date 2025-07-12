@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import experienceData from '@shared/data/resume/experience.data';
-import { Image } from "../../../../../../shared/components/image/image";
+import { Image } from '@shared/components/image/image';
 
 @Component({
   selector: 'app-experience',
