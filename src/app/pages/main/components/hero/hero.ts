@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import headerData from '../../../../shared/data/header.data';
 import { SocialMediaLinks } from '../../../../shared/components/social-media-links/social-media-links';
 import { Image } from '../../../../shared/components/image/image';
@@ -12,14 +11,13 @@ import { ResumeLinks } from '../../../../shared/components/resume-links/resume-l
 import { NavigationLinks } from './navigation-links/navigation-links';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MainPageService } from '../../main.page.service';
+import { MobileMenuService } from '../mobile-menu/mobile-menu.service';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.html',
   styleUrl: './hero.css',
   imports: [
-    RouterLink,
     SocialMediaLinks,
     Image,
     MatButtonModule,
@@ -39,9 +37,9 @@ export class Hero {
 
   mode = new FormControl('over' as MatDrawerMode);
 
-  constructor(private mainPageService: MainPageService) {}
+  constructor(private mobileMenuService: MobileMenuService) {}
 
   toggleDrawer(): void {
-    this.mainPageService.toggleDrawer();
+    this.mobileMenuService.toggleDrawer();
   }
 }

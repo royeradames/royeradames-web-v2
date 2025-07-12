@@ -1,52 +1,14 @@
-import { NgFor, NgIf } from '@angular/common';
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import headerData from '../../shared/data/header.data';
+import { Component } from '@angular/core';
+import { MobileMenu } from './components/mobile-menu/mobile-menu';
 import { Hero } from './components/hero/hero';
 import { ProjectGallery } from './components/project-gallery/project-gallery';
-import { Footer } from './components/footer/footer';
 import { Resume } from './components/resume/resume';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSelectModule } from '@angular/material/select';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatSidenavModule, MatSidenav } from '@angular/material/sidenav';
-import { SocialMediaLinks } from '../../shared/components/social-media-links/social-media-links';
-import { ResumeLinks } from '../../shared/components/resume-links/resume-links';
-import { NavigationLinks } from './components/hero/navigation-links/navigation-links';
-import { MainPageService } from './main.page.service';
+import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'page-main',
   templateUrl: './main.page.html',
   styleUrl: './main.page.css',
-  imports: [
-    Hero,
-    ProjectGallery,
-    Footer,
-    Resume,
-    MatButtonModule,
-    MatIconModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatSidenavModule,
-    SocialMediaLinks,
-    ResumeLinks,
-    NavigationLinks,
-  ],
+  imports: [Hero, ProjectGallery, Resume, Footer, MobileMenu],
 })
-export class MainPage implements AfterViewInit {
-  @ViewChild('drawer') drawer!: MatSidenav;
-
-  public headerData = headerData;
-
-  constructor(private mainPageService: MainPageService) {}
-
-  ngAfterViewInit(): void {
-    this.mainPageService.setDrawer(this.drawer);
-  }
-
-  toggleDrawer(): void {
-    this.mainPageService.toggleDrawer();
-  }
-}
+export class MainPage {}
