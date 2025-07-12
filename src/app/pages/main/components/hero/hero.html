@@ -12,23 +12,7 @@
         <app-navigation-links></app-navigation-links>
         <app-resume-links></app-resume-links>
         <app-social-media-links></app-social-media-links>
-        <button
-          mat-icon-button
-          class="mobile-menu-toggle"
-          (click)="toggleDrawer()"
-          aria-label="Open mobile menu"
-          style="
-            --mat-icon-button-icon-size: 48px;
-            --mat-icon-button-state-layer-size: 72px;
-          "
-        >
-          <img
-            src="assets/icons/mobile-menu-icon.svg"
-            alt="Menu"
-            height="48"
-            width="48"
-          />
-        </button>
+        <app-mobile-menu-button></app-mobile-menu-button>
       </nav>
       <h1>{{ headerData.hero.title }}</h1>
 
