@@ -11,7 +11,7 @@ export const routes: Routes = [
   {
     path: '',
     component: MainPage,
-    title: 'Material UI Demo',
+    title: 'Resume | Royer Adames',
   },
   {
     path: '**',
