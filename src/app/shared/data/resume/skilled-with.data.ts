@@ -5,8 +5,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'java-script-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'JavaScript (JS)',
       description: 'The language of the web. Makes HTML dynamic.',
@@ -15,8 +15,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'angular-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Angular',
       description: 'JavaScript UI framework. Commonly use in legacy code',
@@ -25,8 +25,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'cypress-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Cypress',
       description: 'JavaScript software testing framework',
@@ -35,8 +35,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'html-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'HTML',
       description: 'Holds the content of the web',
@@ -45,8 +45,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'css-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'CSS',
       description: 'Makes HTML prettier',
@@ -55,8 +55,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'agile-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Agile',
       description: 'Our stand up process',
@@ -65,8 +65,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'reactjs-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'React',
       description: 'JavaScript UI Framework. The most popular',
@@ -75,8 +75,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'typescript-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'TypeScript (TS)',
       description:
@@ -86,8 +86,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'svelte-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Svelte',
       description:
@@ -97,8 +97,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'nextjs-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Next.js',
       description: 'React Meta Framework',
@@ -107,8 +107,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'sass-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Sass',
       description: 'CSS with TS features',
@@ -117,8 +117,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'jira-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Jira',
       description: 'Software development management platform',
@@ -127,8 +127,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'microsoft-teams-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Microsoft Teams',
       description: 'The office. Texting, videos, calendar, and group chat.',
@@ -137,8 +137,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'computer-archicture-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Computer Architecture',
       description: 'What decides the structure of the software',
@@ -147,8 +147,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'jest-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Jest',
       description: 'Alternative JavaScript software testing framework',
@@ -157,8 +157,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'playwright-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Playwright',
       description:
@@ -168,8 +168,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'puppeteer-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Puppeteer',
       description: 'The grandpapi JavaScript software testing framework',
@@ -178,8 +178,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'aws-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'AWS',
       description:
@@ -189,8 +189,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'microsoft-azure-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Microsoft Azure',
       description: 'Microsoft AWS',
@@ -199,8 +199,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'vercel-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Vercel',
       description: 'AWS middleman with a good UI',
@@ -209,8 +209,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'big-o-notation-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Big O Notation',
       description: 'What we use to tell how fast our software is',
@@ -219,8 +219,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'data-structured-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Data Structure',
       description: 'Software data types and how to best use them',
@@ -229,8 +229,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'sql-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'SQL',
       description: 'Language of relational database',
@@ -239,8 +239,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'elastricsearch-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'ElasticSearch',
       description: 'Makes searching and filtering your big data quick',
@@ -249,8 +249,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'expressjs-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Express.js',
       description: 'Barebone backend software in node.js',
@@ -259,8 +259,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'mysql-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'MySQL',
       description: 'Rational database',
@@ -269,8 +269,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'scrum-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Scrum',
       description: 'The implementation of agile. Is how we do morning standup',
@@ -279,8 +279,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'apollo-graph-ql-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Apollo GraphQL',
       description: 'Implementation of GraphQL',
@@ -289,8 +289,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'python-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Python',
       description: 'The language of AI',
@@ -299,8 +299,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'docker-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Docker',
       description:
@@ -310,8 +310,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'nodejs-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Node.js',
       description:
@@ -321,8 +321,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'rest-api-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'RESTful API',
       description: 'The common way to build a backed software',
@@ -331,8 +331,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'slack-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Slack',
       description: 'Microsoft teams but cooler',
@@ -341,8 +341,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'github-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Github',
       description: 'Common place where our software lives',
@@ -351,8 +351,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'git-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Git',
       description:
@@ -362,8 +362,8 @@ const skilledWithSection = {
     {
       icon: {
         name: 'tailwind-icon.svg',
-        height: 32,
-        width: 32,
+        height: 42,
+        width: 42,
       },
       title: 'Tailwind',
       description: 'CSS++',

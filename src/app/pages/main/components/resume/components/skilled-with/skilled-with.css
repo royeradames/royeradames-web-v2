@@ -32,7 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 12px;
 }
 
 .skilled-with__item-link{
@@ -58,13 +58,13 @@
 .skilled-with__item-description{
   align-self: stretch;
   color: var(--Gray-Light, #ACB1C3);
-  text-align: center;
+text-align: center;
 
-  /* text-xs/normal */
-  font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-base, 16px);
-  font-style: normal;
-  font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-4, 16px); /* 133.333% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+/* text-base/normal */
+font-family: var(--font-family-sans, Inter);
+font-size: var(--font-size-base, 16px);
+font-style: normal;
+font-weight: var(--font-weight-normal, 400);
+line-height: var(--font-line-height-6, 24px); /* 150% */
+letter-spacing: var(--font-letter-spacing-normal, 0px);
 }
