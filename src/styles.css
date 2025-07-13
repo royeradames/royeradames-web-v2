@@ -51,7 +51,7 @@ h6 {
 /* Global styles */
 html, body {
   height: 100%;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Inter, "Helvetica Neue", sans-serif;
 }
 
 /* CSS Custom Properties for consistent theming */
@@ -64,6 +64,9 @@ html, body {
   --text-primary: rgba(0, 0, 0, 0.87);
   --text-secondary: rgba(0, 0, 0, 0.54);
   --text-disabled: rgba(0, 0, 0, 0.38);
+
+  /* Typography */
+  --font-family-sans: Inter, "Helvetica Neue", sans-serif;
 }
 
 /* Custom Material component overrides */
