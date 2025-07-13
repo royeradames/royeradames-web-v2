@@ -1,31 +1,33 @@
+import resumeAnchorLinks from './resume-anchor-links.data';
+
 const footerData = {
   callToAction: {
     title: "Let's build something together",
     message:
       "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
-    contactMessage: "Drop me an email:",
-    contactEmail: "CONTACT@ROYERADAMES.COM",
+    contactMessage: 'Drop me an email:',
+    contactEmail: 'CONTACT@ROYERADAMES.COM',
   },
   resumeLinks: [
     {
-      name: "Back to top",
-      link: "#",
+      name: 'Back to top',
+      link: `#${resumeAnchorLinks.home.id}`,
     },
     {
-      name: "Projects",
-      link: "#projects",
+      name: 'Projects',
+      link: `#${resumeAnchorLinks.projects.id}`,
     },
     {
-      name: "Experience",
-      link: "#experience",
+      name: 'Experience',
+      link: `#${resumeAnchorLinks.experience.id}`,
     },
     {
-      name: "Education",
-      link: "#education",
+      name: 'Education',
+      link: `#${resumeAnchorLinks.education.id}`,
     },
     {
-      name: "Tools and Skills",
-      link: "#tools-and-skills",
+      name: 'Skilled With',
+      link: `#${resumeAnchorLinks.skilledWith.id}`,
     },
   ],
 };

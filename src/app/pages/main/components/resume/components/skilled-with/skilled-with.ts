@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import skilledWithData from '@shared/data/resume/skilled-with.data';
 import { Image } from '@shared/components/image/image';
+import resumeAnchorLinks from '@shared/data/resume-anchor-links.data';
 
 @Component({
   selector: 'app-skilled-with',
@@ -9,5 +10,5 @@ import { Image } from '@shared/components/image/image';
   imports: [Image],
 })
 export class SkilledWith {
-  public skilledWith = skilledWithData;
+  public skilledWithSection = skilledWithData;
 }

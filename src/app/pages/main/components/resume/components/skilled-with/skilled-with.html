@@ -1,7 +1,9 @@
 <section class="skilled-with">
-  <h2 class="skilled-with__title">Skilled With</h2>
+  <h2 class="skilled-with__title" [id]="skilledWithSection.id">
+    {{ skilledWithSection.name }}
+  </h2>
   <div class="skilled-with__list">
-    @for (skilledWith of skilledWith; track $index) {
+    @for (skilledWith of skilledWithSection.sections; track $index) {
     <section class="skilled-with__item">
       <header class="skilled-with__item-header">
         <a
