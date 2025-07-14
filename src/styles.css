@@ -65,8 +65,29 @@ html, body {
   --text-secondary: rgba(0, 0, 0, 0.54);
   --text-disabled: rgba(0, 0, 0, 0.38);
 
+  /* Colors */
+  --Gray-Lightest: #E2E6EE;
+  --Gray-Light: #ACB1C3;
+  --Gray-Darker: #2E2E48;
+  --color-base-white: #FFF;
+
   /* Typography */
   --font-family-sans: Inter, "Helvetica Neue", sans-serif;
+  --font-size-base: 16px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-line-height-6: 24px;
+  --font-line-height-9: 36px;
+  --font-letter-spacing-normal: 0px;
+
+  /* Spacing */
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+
+  /* Breakpoints */
+  --breakpoint-xl: 1280px;
 }
 
 /* Custom Material component overrides */
