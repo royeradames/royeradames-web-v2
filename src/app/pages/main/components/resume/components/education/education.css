@@ -9,7 +9,7 @@
   padding: var(--spacing-0, 0px);
   align-items: flex-start;
   align-content: flex-start;
-  gap: var(--spacing-0, 0px) var(--spacing-10, 40px);
+  gap: var(--spacing-10, 40px);
   align-self: stretch;
   flex-wrap: wrap;
 }
@@ -31,7 +31,6 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  flex-wrap: wrap;
 }
 
 .education__title{
