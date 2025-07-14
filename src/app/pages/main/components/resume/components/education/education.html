@@ -1,9 +1,9 @@
 <section class="education">
-  <h2 class="experience__title">Education</h2>
-  <div class="experience__list">
+  <h2 class="education__title">Education</h2>
+  <div class="education__content">
     @for (education of education; track $index) {
-    <section class="experience__item">
-      <header class="experience__item-header">
+    <section class="education__item">
+      <header class="education__item-header">
         @if (education.logo) {
         <app-image
           [name]="education.logo.name"
@@ -14,25 +14,30 @@
         ></app-image>
         }
 
-        <div class="experience__item-content">
-          <h3 class="experience__item-title">
+        <div class="education__item-content">
+          <h3 class="education__item-title">
             {{ education.title }}
           </h3>
-          <p class="experience__item-date">
-            Calendar icon {{ education.startDate }} - {{ education.endDate }}
+          <p class="education__item-date">
+            <app-image
+              [name]="'calendar.svg'"
+              [alt]="'calendar'"
+              [height]="16"
+              [width]="16"
+              [type]="'icons'"
+            ></app-image>
+            {{ education.startDate }}
+            @if (education.endDate) { - {{ education.endDate }}
+            }
           </p>
         </div>
       </header>
-      <div class="experience__item-achievements">
+      <div class="education__item-achievements">
         @for (achievement of education.achievements; track $index) {
-        <p class="experience__item-achievement">{{ achievement }}</p>
+        <p class="education__item-achievement">{{ achievement }}</p>
         }
       </div>
     </section>
     }
   </div>
-
-  <footer class="experience__footer">
-    <a routerLink="/education" class="experience__link">View All Education</a>
-  </footer>
 </section>

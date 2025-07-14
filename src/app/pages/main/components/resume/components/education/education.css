@@ -1,7 +1,100 @@
-.hero{
+.education{
   display: flex;
+  flex-direction: column;
   gap: 16px;
-  flex-direction: row-reverse;
-  justify-content: center;
+}
+
+.education__content{
+  display: flex;
+  padding: var(--spacing-0, 0px);
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: var(--spacing-0, 0px) var(--spacing-10, 40px);
+  align-self: stretch;
   flex-wrap: wrap;
+}
+
+.education__item{
+  display: flex;
+  min-width: 20em;
+  max-width: 28em;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: var(--radius-none, 0px);
+  background: var(--Gray-Darker, #2E2E48);
+}
+
+.education__item-header{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.education__title{
+  color: var(--Gray-Lightest, #E2E6EE);
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-3xl, 30px);
+  font-style: normal;
+  font-weight: var(--font-weight-bold, 700);
+  line-height: var(--font-line-height-9, 36px);
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.education__item-title{
+  color: var(--color-base-white, #FFF);
+
+  /* text-base/normal */
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-2xl, 24px);
+  font-style: normal;
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-line-height-6, 24px); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.education__item-date{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  color: var(--Gray-Light, #ACB1C3);
+  text-align: center;
+
+  /* text-base/normal */
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-base, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-line-height-6, 24px); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.education__item-achievements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.education__item-achievement{
+  align-self: stretch;
+  color: var(--Gray-Light, #ACB1C3);
+
+  /* text-base/normal */
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-base, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-line-height-6, 24px); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.education__item-content{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
