@@ -18,18 +18,10 @@
           <h3 class="education__item-title">
             {{ education.title }}
           </h3>
-          <p class="education__item-date">
-            <app-image
-              [name]="'calendar.svg'"
-              [alt]="'calendar'"
-              [height]="16"
-              [width]="16"
-              [type]="'icons'"
-            ></app-image>
-            {{ education.startDate }}
-            @if (education.endDate) { - {{ education.endDate }}
-            }
-          </p>
+          <app-dates-range
+            [startDate]="education.startDate"
+            [endDate]="education.endDate"
+          ></app-dates-range>
         </div>
       </header>
       <ul class="education__item-achievements">

@@ -1,0 +1,12 @@
+<p class="education__item-date">
+  <app-image
+    [name]="'calendar.svg'"
+    [alt]="'calendar'"
+    [height]="16"
+    [width]="16"
+    [type]="'icons'"
+  ></app-image>
+  {{ startDate() }}
+  @if (endDate()) { - {{ endDate() }}
+  }
+</p>
