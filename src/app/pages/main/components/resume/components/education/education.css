@@ -79,21 +79,13 @@
   gap: 16px;
 }
 
-.education__item-achievement{
-  align-self: stretch;
-  color: var(--Gray-Light, #ACB1C3);
-
-  /* text-base/normal */
-  font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-base, 16px);
-  font-style: normal;
-  font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px); /* 150% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
-}
-
 .education__item-content{
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
+
+
+
+

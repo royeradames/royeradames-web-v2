@@ -32,11 +32,13 @@
           </p>
         </div>
       </header>
-      <div class="education__item-achievements">
+      <ul class="education__item-achievements">
         @for (achievement of education.achievements; track $index) {
-        <p class="education__item-achievement">{{ achievement }}</p>
+        <app-ra-item [isLast]="!($index === education.achievements.length - 1)">
+          {{ achievement }}
+        </app-ra-item>
         }
-      </div>
+      </ul>
     </section>
     }
   </div>
