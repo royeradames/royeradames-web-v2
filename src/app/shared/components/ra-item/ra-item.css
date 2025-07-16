@@ -1,4 +1,4 @@
-.education__item-achievement{
+.item{
   display: flex;
   gap: 12px;
   align-self: stretch;
@@ -13,7 +13,7 @@
   letter-spacing: var(--font-letter-spacing-normal, 0px);
 }
 
-.education__item-achievement-symbols{
+.item__symbols{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
   flex-shrink: 0;
 }
 
-.education__item-achievement-dot{
+.item__dot{
   width: 16px;
   height: 16px;
   background-color: var(--Gray-Light, #ACB1C3);
@@ -30,13 +30,13 @@
   margin-top: 4px;
 }
 
-.education__item-achievement-divider{
+.item__divider{
   width: 2px;
   height: 100%;
   background-color: var(--Gray-Light, #ACB1C3);
 }
 
 
-.education__item-achievement-text{
+.item__text{
   padding-bottom: var(--spacing-2, 8px);
 }
