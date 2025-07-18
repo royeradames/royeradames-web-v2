@@ -1,40 +1,50 @@
 <section class="experience">
   <h2 class="experience__title">Experience</h2>
   <div class="experience__list">
-    @for (experience of experience; track $index) {
+    @for (data of dataList; track $index) {
     <section class="experience__item">
       <header class="experience__item-header">
-        <p class="experience__item-date">
-          Calendar icon {{ experience.startDate }} - {{ experience.endDate }}
-        </p>
+        <app-dates-range
+          [startDate]="data.startDate"
+          [endDate]="data.endDate"
+        ></app-dates-range>
         <div class="experience__item-company">
-          @if (experience.companyLogo) {
+          @if (data.logo) {
           <app-image
-            [name]="experience.companyLogo.name"
-            [alt]="experience.companyLogo.name"
-            [height]="experience.companyLogo.height"
-            [width]="experience.companyLogo.width"
+            [name]="data.logo.name"
+            [alt]="data.logo.name"
+            [height]="data.logo.height"
+            [width]="data.logo.width"
             [type]="'companies-logo'"
           ></app-image>
           }
           <div class="experience__item-details">
             <p class="experience__item-title">
-              {{ experience.title }}
+              {{ data.title }}
             </p>
             <h3 class="experience__item-name">
-              {{ experience.companyName }}
+              {{ data.companyName }}
             </h3>
             <p class="experience__item-location">
-              {{ experience.location }}
+              <app-image
+                [name]="'location-icon.svg'"
+                [alt]="'location-icon.svg'"
+                [height]="24"
+                [width]="24"
+                [type]="'icons'"
+              ></app-image>
+              {{ data.location }}
             </p>
           </div>
         </div>
       </header>
-      <div class="experience__item-achievements">
-        @for (achievement of experience.achivementList; track $index) {
-        <p class="experience__item-achievement">{{ achievement }}</p>
+      <ul class="experience__item-achievements">
+        @for (achievement of data.achivementList; track $index) {
+        <app-ra-item [isLast]="!($index === data.achivementList.length - 1)">
+          {{ achievement }}
+        </app-ra-item>
         }
-      </div>
+      </ul>
     </section>
     }
   </div>

@@ -1,32 +1,32 @@
 <section class="education">
   <h2 class="education__title">Education</h2>
   <div class="education__content">
-    @for (education of education; track $index) {
+    @for (data of dataList; track $index) {
     <section class="education__item">
       <header class="education__item-header">
-        @if (education.logo) {
+        @if (data.logo) {
         <app-image
-          [name]="education.logo.name"
-          [alt]="education.logo.name"
-          [height]="education.logo.height"
-          [width]="education.logo.width"
+          [name]="data.logo.name"
+          [alt]="data.logo.name"
+          [height]="data.logo.height"
+          [width]="data.logo.width"
           [type]="'companies-logo'"
         ></app-image>
         }
 
         <div class="education__item-content">
           <h3 class="education__item-title">
-            {{ education.title }}
+            {{ data.title }}
           </h3>
           <app-dates-range
-            [startDate]="education.startDate"
-            [endDate]="education.endDate"
+            [startDate]="data.startDate"
+            [endDate]="data.endDate"
           ></app-dates-range>
         </div>
       </header>
       <ul class="education__item-achievements">
-        @for (achievement of education.achievements; track $index) {
-        <app-ra-item [isLast]="!($index === education.achievements.length - 1)">
+        @for (achievement of data.achievementList; track $index) {
+        <app-ra-item [isLast]="!($index === data.achievementList.length - 1)">
           {{ achievement }}
         </app-ra-item>
         }

@@ -2,7 +2,7 @@ const experience = [
   {
     startDate: 'Oct 2022',
     endDate: 'Present',
-    companyLogo: {
+    logo: {
       name: 'ppl-logo.svg',
       height: 40,
       width: 61,
@@ -22,7 +22,7 @@ const experience = [
   {
     startDate: 'May 2022',
     endDate: 'Sep 2023',
-    companyLogo: {
+    logo: {
       name: 'integris-logo.svg',
       height: 40,
       width: 54,
@@ -41,7 +41,7 @@ const experience = [
   {
     startDate: 'Jan 2022',
     endDate: 'May 2022',
-    companyLogo: {
+    logo: {
       name: 'echelon-logo-small.svg',
       height: 40,
       width: 40,
@@ -58,7 +58,7 @@ const experience = [
   {
     startDate: 'Jun 2021',
     endDate: 'Dec 2021',
-    companyLogo: {
+    logo: {
       name: 'breakthrough-development-logo.svg',
       height: 40,
       width: 43,

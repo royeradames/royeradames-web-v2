@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import educationData from '@shared/data/resume/education.data';
 import { Image } from '@shared/components/image/image';
-import { RaItem } from "@shared/components/ra-item/ra-item";
-import { DatesRange } from "@shared/components/dates-range/dates-range";
+import { RaItem } from '@shared/components/ra-item/ra-item';
+import { DatesRange } from '@shared/components/dates-range/dates-range';
 
 @Component({
   selector: 'app-education',
@@ -11,5 +11,5 @@ import { DatesRange } from "@shared/components/dates-range/dates-range";
   imports: [Image, RaItem, DatesRange],
 })
 export class Education {
-  public education = educationData;
+  public dataList = educationData;
 }
