@@ -1,7 +1,90 @@
-.hero{
+.experience__title{
+  color: var(--Gray-Lightest, #E2E6EE);
+
+  /* text-3xl/bold */
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-3xl, 30px);
+  font-style: normal;
+  font-weight: var(--font-weight-bold, 700);
+  line-height: var(--font-line-height-9, 36px); /* 120% */
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.experience__item-title{
+  color: var(--Gray-Light, #ACB1C3);
+
+/* text-xl/normal */
+font-family: var(--font-family-sans, Inter);
+font-size: var(--font-size-xl, 20px);
+font-style: normal;
+font-weight: var(--font-weight-normal, 400);
+line-height: var(--font-line-height-7, 28px); /* 140% */
+letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.experience__item-name{
+  color: var(--Gray-Lightest, #E2E6EE);
+  font-family: Inter;
+  font-size: var(--font-size-xl, 20px);
+  font-style: normal;
+  font-weight: var(--font-weight-medium, 500);
+  line-height: var(--font-line-height-7, 28px); /* 140% */
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.experience__item-location{
   display: flex;
-  gap: 16px;
-  flex-direction: row-reverse;
-  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--Gray-Light, #ACB1C3);
+
+  /* text-base/normal */
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-base, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-line-height-6, 24px); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.experience__item-achievements{
+  min-width: 20em;
+  max-width: 28em;
+}
+
+.experience{
+  display: flex;
+  padding-right: var(--spacing-4, 16px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-4, 16px);
+}
+
+.experience__list{
+  display: flex;
+  padding: 0px var(--spacing-0, 0px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-8, 32px);
+}
+
+.experience__item{
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--breakpoint-xl, 1280px);
+  padding: 0px var(--spacing-0, 0px);
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 40px var(--spacing-10, 40px);
+  align-self: stretch;
   flex-wrap: wrap;
 }
+
+.experience__item-company{
+  display: flex;
+  gap: 16px;
+}
+
+.experience__item-header{    display: flex;
+  flex-direction: column;
+  gap: 8px;}
