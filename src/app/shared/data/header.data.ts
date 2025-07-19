@@ -10,7 +10,7 @@ const headerData = {
     navigationLinks: [
       {
         name: 'Who am I?',
-        link: '#who-am-i',
+        link: '/',
       },
       {
         name: 'Publications',

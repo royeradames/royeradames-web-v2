@@ -1,4 +1,4 @@
-<a [routerLink]="['/']" routerLinkActive="router-link-active">
+<a [routerLink]="['/']">
   <app-image
     [name]="headerData.navigation.logo.name"
     [alt]="headerData.navigation.logo.alt"
@@ -8,6 +8,10 @@
   ></app-image>
 </a>
 @for (link of headerData.navigation.navigationLinks; track $index) {
-<a [routerLink]="[link.link]" routerLinkActive="router-link-active"
-  >{{ link.name }} </a
->}
+<a
+  [routerLink]="[link.link]"
+  [routerLinkActive]="'active'"
+  class="navigation__link"
+  >{{ link.name }}
+</a>
+}
