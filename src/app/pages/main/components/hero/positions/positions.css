@@ -1,13 +1,13 @@
-.hero__title-description {
+.hero__positions {
   display: flex;
   align-items: center;
   gap: var(--spacing-2, 8px);
   align-self: stretch;
   flex-wrap: wrap;
 }
-.hero__title-description-text {
-  /* text-sm/normal */
 
+.hero__positions-text {
+  /* text-sm/normal */
   font-family: var(--font-family-sans, Inter);
   font-size: var(--font-size-sm, 14px);
   font-style: normal;
@@ -22,33 +22,30 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hero__title-description-item {
+
+.hero__positions-item {
   display: flex;
   padding: var(--spacing-2, 8px) var(--spacing-3, 12px);
   align-items: center;
   gap: var(--spacing-3, 12px);
   border-radius: var(--radius-2xl, 16px);
   background: hsl(240deg 22% 13% / 54%);
-  max-width: max-content;
+  max-width: 100%;
+  width: fit-content;
 }
 
-.hero__title-description-nested-list {
+.hero__positions-tags {
   display: flex;
-  align-items: center;
-  gap: var(--spacing-3, 12px);
-  align-self: stretch;
-}
-
-.hero__title-description-nested-list {
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: var(--spacing-2, 8px);
   padding: var(--spacing-1, 4px) var(--spacing-3, 12px);
+  max-width: 100%;
 }
 
-.hero__title-description-nested-list-item {
+.hero__positions-tag {
   border-radius: var(--radius-full, 9999px);
   background: hsl(240, 22%, 23%);
   padding: var(--spacing-1, 4px) var(--spacing-3, 12px);
