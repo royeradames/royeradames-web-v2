@@ -7,11 +7,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { ResumeLinks } from '@shared/components/resume-links/resume-links';
 import { NavigationLinks } from './navigation-links/navigation-links';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MobileMenuButton } from '../mobile-menu/mobile-menu-button/mobile-menu-button';
+import { RouterLink } from '@angular/router';
+import footerData from '@shared/data/footer.data';
 
 @Component({
   selector: 'app-hero',
@@ -25,14 +26,16 @@ import { MobileMenuButton } from '../mobile-menu/mobile-menu-button/mobile-menu-
     MatSelectModule,
     MatFormFieldModule,
     MatSidenavModule,
-    ResumeLinks,
     NavigationLinks,
     MatRadioModule,
     FormsModule,
     ReactiveFormsModule,
     MobileMenuButton,
+    RouterLink,
   ],
+  standalone: true,
 })
 export class Hero {
   public headerData = headerData;
+  public resumeLinks = footerData.resumeLinks;
 }

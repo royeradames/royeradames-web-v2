@@ -1,6 +1,7 @@
 :host {
   display: flex;
   gap: 16px;
+  flex-direction: var(--navigation-links-flex-direction, row);
   align-items: center;
 }
 

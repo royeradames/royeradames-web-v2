@@ -1,4 +1,4 @@
-<div class="social-media-links" aria-label="Social Media Links">
+<nav class="social-media-links" aria-label="Social Media Links">
   @for (link of socialMediaList; track $index) {
   <a
     class="social-media-links__link"
@@ -9,12 +9,13 @@
     <app-image
       [name]="link.icon"
       [alt]="link.name"
-      [height]="24"
-      [width]="24"
+      [height]="32"
+      [width]="32"
       [type]="'icons'"
       [ariaHidden]="true"
-    ></app-image>
+      class="social-media-links__icon"
+    />
     <span class="sr-only">{{ link.name }}</span>
   </a>
   }
-</div>
+</nav>

@@ -20,8 +20,14 @@
         </button>
       </header>
       <nav class="mobile-menu-links">
-        <app-navigation-links></app-navigation-links>
-        <app-resume-links></app-resume-links>
+        <app-navigation-links
+          [linkList]="headerData.navigation.navigationLinks"
+          style="--navigation-links-flex-direction: column"
+        ></app-navigation-links>
+        <app-navigation-links
+          [linkList]="resumeLinks"
+          style="--navigation-links-flex-direction: column"
+        ></app-navigation-links>
         <app-social-media-links></app-social-media-links>
       </nav>
     </section>

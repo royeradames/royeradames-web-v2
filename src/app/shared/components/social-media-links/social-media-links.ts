@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { socialMediaList } from '../../data/social-media.data';
-import { Image } from "../image/image";
+import { socialMediaList } from '@shared/data/social-media.data';
+import { Image } from '../image/image';
 
 @Component({
   selector: 'app-social-media-links',

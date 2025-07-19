@@ -6,9 +6,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule, MatSidenav } from '@angular/material/sidenav';
 import { SocialMediaLinks } from '@shared/components/social-media-links/social-media-links';
-import { ResumeLinks } from '@shared/components/resume-links/resume-links';
 import { NavigationLinks } from '../hero/navigation-links/navigation-links';
 import { MobileMenuService } from './mobile-menu.service';
+import footerData from '@shared/data/footer.data';
 
 @Component({
   selector: 'app-mobile-menu',
@@ -21,14 +21,15 @@ import { MobileMenuService } from './mobile-menu.service';
     MatFormFieldModule,
     MatSidenavModule,
     SocialMediaLinks,
-    ResumeLinks,
     NavigationLinks,
   ],
+  standalone: true,
 })
 export class MobileMenu implements AfterViewInit {
   @ViewChild('drawer') drawer!: MatSidenav;
 
   public headerData = headerData;
+  public resumeLinks = footerData.resumeLinks;
 
   constructor(private mobileMenuService: MobileMenuService) {}
 

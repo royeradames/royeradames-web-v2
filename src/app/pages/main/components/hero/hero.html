@@ -9,8 +9,19 @@
   <div class="hero__content">
     <header>
       <nav>
-        <app-navigation-links></app-navigation-links>
-        <app-resume-links></app-resume-links>
+        <a [routerLink]="['/']">
+          <app-image
+            [name]="headerData.navigation.logo.name"
+            [alt]="headerData.navigation.logo.alt"
+            [height]="headerData.navigation.logo.height"
+            [width]="headerData.navigation.logo.width"
+            [type]="'companies-logo'"
+          ></app-image>
+        </a>
+        <app-navigation-links
+          [linkList]="headerData.navigation.navigationLinks"
+        ></app-navigation-links>
+        <app-navigation-links [linkList]="resumeLinks"></app-navigation-links>
         <app-social-media-links></app-social-media-links>
         <app-mobile-menu-button></app-mobile-menu-button>
       </nav>

@@ -12,22 +12,27 @@ const footerData = {
     {
       name: 'Back to top',
       link: `#${resumeAnchorLinks.home.id}`,
+      isExternal: false,
     },
     {
       name: 'Projects',
       link: `#${resumeAnchorLinks.projects.id}`,
+      isExternal: false,
     },
     {
       name: 'Experience',
       link: `#${resumeAnchorLinks.experience.id}`,
+      isExternal: false,
     },
     {
       name: 'Education',
       link: `#${resumeAnchorLinks.education.id}`,
+      isExternal: false,
     },
     {
       name: 'Skilled With',
       link: `#${resumeAnchorLinks.skilledWith.id}`,
+      isExternal: false,
     },
   ],
 };

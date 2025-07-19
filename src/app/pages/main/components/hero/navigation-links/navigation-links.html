@@ -1,14 +1,4 @@
-<a [routerLink]="['/']">
-  <app-image
-    [name]="headerData.navigation.logo.name"
-    [alt]="headerData.navigation.logo.alt"
-    [height]="headerData.navigation.logo.height"
-    [width]="headerData.navigation.logo.width"
-    [type]="'companies-logo'"
-  ></app-image>
-</a>
-@for (link of headerData.navigation.navigationLinks; track $index) { @if
-(link.isExternal) {
+@for (link of linkList(); track $index) { @if (link.isExternal) {
 <a [href]="link.link" target="_blank" class="navigation__link"
   >{{ link.name }}
   <app-image

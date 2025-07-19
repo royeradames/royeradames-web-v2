@@ -19,16 +19,6 @@ const headerData = {
         isExternal: true,
       },
     ],
-    menuLinks: [
-      {
-        name: 'Who am I?',
-        link: '/',
-      },
-      {
-        name: 'Publications',
-        link: '/publications',
-      },
-    ],
   },
   hero: {
     title: 'Royer Adames',
