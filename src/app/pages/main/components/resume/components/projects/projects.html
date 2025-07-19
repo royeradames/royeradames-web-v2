@@ -1,8 +1,8 @@
-<section class="projects">
-  <h3 class="title">Projects</h3>
-  <div class="projects__content">
+<section class="projects-list">
+  <h3 class="projects-list__title">Projects</h3>
+  <div class="projects-list__content">
     @for (project of projects; track $index) {
-    <div class="projects__item">
+    <section class="project">
       <!-- @if (project.image) {
       <app-image
         [name]="project.image"
@@ -12,23 +12,30 @@
         [type]="'images'"
       ></app-image>
       } -->
-      <h4 class="projects__title">{{ project.title }}</h4>
-      @for (message of project.messageList; track $index) {
-      <p class="projects__message">
-        <strong class="projects__message-title">{{ message.title }}</strong
-        >:
-        <span class="projects__message-description">{{
-          message.description
-        }}</span>
-      </p>
-      }
-      <a [href]="project.link" target="_blank" class="projects__link"></a>
-    </div>
+      <div class="project__content">
+        <h4 class="project__title">{{ project.title }}</h4>
+        <div class="project__message-list">
+          @for (message of project.messageList; track $index) {
+          <p class="project__message">
+            <strong>{{ message.title }}</strong>
+            : {{ message.description }}
+          </p>
+          }
+        </div>
+        @if (project.link) {
+        <a [href]="project.link" target="_blank" class="project__link">
+          <app-image
+            [name]="'link-icon.svg'"
+            [alt]="'link-icon'"
+            [height]="16"
+            [width]="16"
+            [type]="'icons'"
+          ></app-image>
+          {{ project.link }}
+        </a>
+        }
+      </div>
+    </section>
     }
   </div>
-  <footer>
-    <a routerLink="/projects" class="projects__footer-link"
-      >View All Projects</a
-    >
-  </footer>
 </section>
