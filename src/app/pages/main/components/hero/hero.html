@@ -25,20 +25,20 @@
         <app-social-media-links></app-social-media-links>
         <app-mobile-menu-button></app-mobile-menu-button>
       </nav>
-      <h1>{{ headerData.hero.title }}</h1>
+      <h1 class="hero__title">{{ headerData.hero.title }}</h1>
 
       @if(!!headerData.hero.titleDescription.length){
       <p class="sr-only">Positions</p>
 
       @for (item of headerData.hero.titleDescription; track $index) {
-      <ul>
-        <li>
+      <ul class="hero__title-description">
+        <li class="hero__title-description-item">
           <div>{{ item.position }}</div>
 
           @if (!!item?.nestedPositions?.length) {
-          <ul>
+          <ul class="hero__title-description-nested-list">
             @for (item of item.nestedPositions; track $index) {
-            <li>{{ item }}</li>
+            <li class="hero__title-description-nested-list-item">{{ item }}</li>
             }
           </ul>
 
@@ -47,17 +47,17 @@
       </ul>
       } }
 
-      <p>
+      <p class="hero__message">
         {{ headerData.hero.message.text }}
         <strong>{{ headerData.hero.message.focusText }}</strong>
       </p>
     </header>
 
-    <div>
+    <div class="hero__content-container">
       <section class="current-technologies">
-        <ul>
+        <ul class="current-technologies__list">
           @for (item of headerData.hero.currentTechnology; track $index) {
-          <li>
+          <li class="current-technologies__item">
             <app-image
               [name]="item.icon"
               [alt]="item.title"
@@ -65,19 +65,21 @@
               [width]="34"
               [type]="'icons'"
             ></app-image>
-            <div>
+            <div class="current-technologies__item-title">
               <a href="#">{{ item.title }}</a>
             </div>
-            <div>{{ item.description }}</div>
+            <div class="current-technologies__item-description">
+              {{ item.description }}
+            </div>
           </li>
           }
         </ul>
       </section>
 
       <section>
-        <ul>
+        <ul class="hero__contact-list">
           @for (item of headerData.hero.contact; track $index) {
-          <li>
+          <li class="hero__contact-item">
             <app-image
               [name]="item.icon"
               [alt]="item.title"
@@ -85,10 +87,12 @@
               [width]="34"
               [type]="'icons'"
             ></app-image>
-            <div>
+            <div class="hero__contact-item-title">
               {{ item.title }}
             </div>
-            <div>{{ item.contactInfo }}</div>
+            <div class="hero__contact-item-contactInfo">
+              {{ item.contactInfo }}
+            </div>
           </li>
           }
         </ul>

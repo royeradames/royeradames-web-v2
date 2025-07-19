@@ -23,3 +23,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.hero__title {
+  color: var(--Gray-Lightest-2, #f7f9fc);
+
+  /* text-5xl/normal */
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-5xl, 48px);
+  font-style: normal;
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-size-5xl, 48px); /* 100% */
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
