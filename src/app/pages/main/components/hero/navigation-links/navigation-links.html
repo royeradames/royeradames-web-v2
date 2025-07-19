@@ -7,11 +7,24 @@
     [type]="'companies-logo'"
   ></app-image>
 </a>
-@for (link of headerData.navigation.navigationLinks; track $index) {
+@for (link of headerData.navigation.navigationLinks; track $index) { @if
+(link.isExternal) {
+<a [href]="link.link" target="_blank" class="navigation__link"
+  >{{ link.name }}
+  <app-image
+    [name]="'external-link-icon.svg'"
+    [alt]="'external link'"
+    [height]="24"
+    [width]="24"
+    [type]="'icons'"
+  ></app-image>
+  <span class="sr-only">Open in a new tab</span>
+</a>
+} @else {
 <a
   [routerLink]="[link.link]"
   [routerLinkActive]="'active'"
   class="navigation__link"
   >{{ link.name }}
 </a>
-}
+} }

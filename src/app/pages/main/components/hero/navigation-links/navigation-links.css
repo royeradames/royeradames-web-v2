@@ -8,7 +8,7 @@
   text-decoration: none;
 
   display: flex;
-  gap: 16px;
+  gap: 8px;
   align-items: center;
 
   color: #fff;
@@ -29,7 +29,6 @@
   padding: var(--spacing-4, 16px) var(--spacing-9, 36px);
   justify-content: center;
   align-items: flex-start;
-  gap: 10px;
   border-radius: var(--radius-full, 9999px);
   background: var(--Gray-Darkest, #232339);
 

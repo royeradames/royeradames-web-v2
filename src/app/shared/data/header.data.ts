@@ -4,17 +4,19 @@ const headerData = {
       name: 'royeradames-logo.svg',
       link: '/',
       alt: 'Royer Adames Logo',
-      width: 121,
-      height: 94,
+      width: 60,
+      height: 60,
     },
     navigationLinks: [
       {
         name: 'Who am I?',
         link: '/',
+        isExternal: false,
       },
       {
         name: 'Publications',
-        link: '/publications',
+        link: 'https://royeraadames.medium.com/',
+        isExternal: true,
       },
     ],
     menuLinks: [
