@@ -14,6 +14,7 @@ import { MobileMenuButton } from '../mobile-menu/mobile-menu-button/mobile-menu-
 import { RouterLink } from '@angular/router';
 import footerData from '@shared/data/footer.data';
 import { Positions } from "./positions/positions";
+import { Message } from "./message/message";
 
 @Component({
   selector: 'app-hero',
@@ -33,7 +34,8 @@ import { Positions } from "./positions/positions";
     ReactiveFormsModule,
     MobileMenuButton,
     RouterLink,
-    Positions
+    Positions,
+    Message
 ],
   standalone: true,
 })

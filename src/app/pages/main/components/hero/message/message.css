@@ -1,0 +1,35 @@
+.hero__message {
+  color: var(--Gray-Lighter, #d9dfe8);
+
+  /* text-7xl/normal */
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-7xl, 72px);
+  font-style: normal;
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-size-7xl, 72px); /* 100% */
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.hero__message strong {
+  background: var(
+    --Gradient-Primary,
+    linear-gradient(90deg, #a478e8 0%, #516cf7 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* text-7xl/normal */
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-7xl, 72px);
+  font-style: normal;
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-size-7xl, 72px);
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.hero__message svg {
+  display: inline;
+  vertical-align: top;
+  margin: 0 12px;
+}
