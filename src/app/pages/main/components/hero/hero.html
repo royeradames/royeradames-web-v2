@@ -28,24 +28,8 @@
       <h1 class="hero__title">{{ headerData.hero.title }}</h1>
 
       @if(!!headerData.hero.titleDescription.length){
-      <p class="sr-only">Positions</p>
-
-      @for (item of headerData.hero.titleDescription; track $index) {
-      <ul class="hero__title-description">
-        <li class="hero__title-description-item">
-          <div>{{ item.position }}</div>
-
-          @if (!!item?.nestedPositions?.length) {
-          <ul class="hero__title-description-nested-list">
-            @for (item of item.nestedPositions; track $index) {
-            <li class="hero__title-description-nested-list-item">{{ item }}</li>
-            }
-          </ul>
-
-          }
-        </li>
-      </ul>
-      } }
+      <app-positions></app-positions>
+      }
 
       <p class="hero__message">
         {{ headerData.hero.message.text }}

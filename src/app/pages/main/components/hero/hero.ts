@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MobileMenuButton } from '../mobile-menu/mobile-menu-button/mobile-menu-button';
 import { RouterLink } from '@angular/router';
 import footerData from '@shared/data/footer.data';
+import { Positions } from "./positions/positions";
 
 @Component({
   selector: 'app-hero',
@@ -32,7 +33,8 @@ import footerData from '@shared/data/footer.data';
     ReactiveFormsModule,
     MobileMenuButton,
     RouterLink,
-  ],
+    Positions
+],
   standalone: true,
 })
 export class Hero {

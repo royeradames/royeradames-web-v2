@@ -1,0 +1,20 @@
+<p class="sr-only">Positions</p>
+
+<ul class="hero__title-description">
+  @for (item of titleDescription; track $index) {
+  <li class="hero__title-description-item">
+    <div class="hero__title-description-text">{{ item.position }}</div>
+
+    @if (!!item?.nestedPositions?.length) {
+    <ul class="hero__title-description-nested-list">
+      @for (item of item.nestedPositions; track $index) {
+      <li class="hero__title-description-nested-list-item">
+        <span class="hero__title-description-text">{{ item }}</span>
+      </li>
+      }
+    </ul>
+
+    }
+  </li>
+  }
+</ul>
