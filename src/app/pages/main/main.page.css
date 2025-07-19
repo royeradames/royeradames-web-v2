@@ -6,3 +6,8 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
+
+.main > * {
+  width: 100%;
+}
+
