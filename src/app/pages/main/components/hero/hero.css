@@ -15,3 +15,11 @@
 .current-technologies {
   /* Add styles for current technologies section */
 }
+
+.hero__navigation {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
