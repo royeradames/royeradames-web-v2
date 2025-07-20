@@ -65,10 +65,6 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-.contact__link:hover .contact__icon {
-  background: var(--Gray-Lightest, #e2e6ee);
-}
-
 .contact__title {
   color: var(--Gray-Light, #acb1c3);
 
