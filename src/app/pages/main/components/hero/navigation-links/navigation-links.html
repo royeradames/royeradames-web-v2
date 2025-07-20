@@ -10,6 +10,8 @@
   ></app-image>
   <span class="sr-only">Open in a new tab</span>
 </a>
+} @else if (isAnchorLink(link.link)) {
+<a [href]="link.link" class="navigation__link">{{ link.name }} </a>
 } @else {
 <a
   [routerLink]="[link.link]"
