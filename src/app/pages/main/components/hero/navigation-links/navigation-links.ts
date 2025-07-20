@@ -14,10 +14,7 @@ export class NavigationLinks {
       name: string;
       link: string;
       isExternal: boolean;
+      isAnchorLink: boolean;
     }[]
   >();
-
-  isAnchorLink(link: string): boolean {
-    return link.startsWith('#');
-  }
 }

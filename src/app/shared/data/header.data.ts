@@ -12,11 +12,13 @@ const headerData = {
         name: 'Who am I?',
         link: '/',
         isExternal: false,
+        isAnchorLink: false,
       },
       {
         name: 'Publications',
         link: 'https://royeraadames.medium.com/',
         isExternal: true,
+        isAnchorLink: false,
       },
     ],
   },
