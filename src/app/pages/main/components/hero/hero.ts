@@ -15,6 +15,7 @@ import { RouterLink } from '@angular/router';
 import footerData from '@shared/data/footer.data';
 import { Positions } from "./positions/positions";
 import { Message } from "./message/message";
+import { SkillList } from "./skill-list/skill-list";
 
 @Component({
   selector: 'app-hero',
@@ -35,7 +36,8 @@ import { Message } from "./message/message";
     MobileMenuButton,
     RouterLink,
     Positions,
-    Message
+    Message,
+    SkillList
 ],
   standalone: true,
 })

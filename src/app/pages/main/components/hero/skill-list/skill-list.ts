@@ -11,8 +11,14 @@ import { Image } from '@shared/components/image/image';
 export class SkillList {
   skillList = input.required<
     {
-      name: string;
+      icon: {
+        name: string;
+        height: number;
+        width: number;
+      };
+      title: string;
       description: string;
+      link: string;
     }[]
   >();
 }

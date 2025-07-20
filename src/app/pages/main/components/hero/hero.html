@@ -35,27 +35,8 @@
     </header>
 
     <div class="hero__content-container">
-      <section class="current-technologies">
-        <ul class="current-technologies__list">
-          @for (item of headerData.hero.currentTechnology; track $index) {
-          <li class="current-technologies__item">
-            <app-image
-              [name]="item.icon"
-              [alt]="item.title"
-              [height]="34"
-              [width]="34"
-              [type]="'icons'"
-            ></app-image>
-            <div class="current-technologies__item-title">
-              <a href="#">{{ item.title }}</a>
-            </div>
-            <div class="current-technologies__item-description">
-              {{ item.description }}
-            </div>
-          </li>
-          }
-        </ul>
-      </section>
+      <app-skill-list [skillList]="headerData.hero.currentTechnology"></app-skill-list>
+    
 
       <section>
         <ul class="hero__contact-list">
