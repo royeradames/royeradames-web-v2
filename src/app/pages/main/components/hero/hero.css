@@ -8,14 +8,6 @@
     cover no-repeat;
 }
 
-.hero__content {
-  /* Add styles for hero content container */
-}
-
-.current-technologies {
-  /* Add styles for current technologies section */
-}
-
 .hero__navigation {
   display: flex;
   gap: 16px;
@@ -35,47 +27,4 @@
   font-weight: var(--font-weight-normal, 400);
   line-height: var(--font-size-5xl, 48px); /* 100% */
   letter-spacing: var(--font-letter-spacing-normal, 0px);
-}
-
-.hero__message {
-  /* display: inline-flex;
-  flex-wrap: wrap;
-  gap: 8px; */
-  color: var(--Gray-Lighter, #d9dfe8);
-
-  /* text-7xl/normal */
-  font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-7xl, 72px);
-  font-style: normal;
-  font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-size-7xl, 72px); /* 100% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
-}
-
-/* .hero__message-text {
-  overflow-wrap: break-word;
-} */
-
-.hero__message strong {
-  background: var(
-    --Gradient-Primary,
-    linear-gradient(90deg, #a478e8 0%, #516cf7 100%)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  /* text-7xl/normal */
-  font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-7xl, 72px);
-  font-style: normal;
-  font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-size-7xl, 72px);
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
-}
-
-.hero__message svg {
-  display: inline;
-  vertical-align: top;
-  margin: 0 12px;
 }

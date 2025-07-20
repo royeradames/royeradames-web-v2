@@ -40,27 +40,7 @@
         title="Current Technologies"
       ></app-skill-list>
 
-      <section>
-        <ul class="hero__contact-list">
-          @for (item of headerData.hero.contact; track $index) {
-          <li class="hero__contact-item">
-            <app-image
-              [name]="item.icon"
-              [alt]="item.title"
-              [height]="34"
-              [width]="34"
-              [type]="'icons'"
-            ></app-image>
-            <div class="hero__contact-item-title">
-              {{ item.title }}
-            </div>
-            <div class="hero__contact-item-contactInfo">
-              {{ item.contactInfo }}
-            </div>
-          </li>
-          }
-        </ul>
-      </section>
+      <app-contact></app-contact>
     </div>
   </div>
 </section>

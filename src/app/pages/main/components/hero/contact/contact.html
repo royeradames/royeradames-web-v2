@@ -1,0 +1,21 @@
+<ul class="contact__list" aria-label="Contact information">
+  @for (item of headerData.hero.contact; track $index) {
+  <li class="contact__item">
+    <div class="contact__icon">
+      <app-image
+        [name]="item.icon"
+        [alt]="item.title"
+        [height]="24"
+        [width]="24"
+        [type]="'icons'"
+      ></app-image>
+    </div>
+    <div class="contact__title">
+      {{ item.title }}
+    </div>
+    <div class="contact__info">
+      {{ item.contactInfo }}
+    </div>
+  </li>
+  }
+</ul>

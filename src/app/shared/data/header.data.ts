@@ -114,16 +114,19 @@ const headerData = {
         icon: 'email-icon.svg',
         title: 'Email',
         contactInfo: 'CONTACT@ROYERADAMES.COM',
+        type: 'email',
       },
       {
         icon: 'text-icon.svg',
         title: 'Text',
         contactInfo: '(407)801-9345',
+        type: 'text',
       },
       {
         icon: 'location-icon.svg',
         title: 'Address',
         contactInfo: 'Orlando, Florida',
+        type: 'address',
       },
     ],
     image: {
