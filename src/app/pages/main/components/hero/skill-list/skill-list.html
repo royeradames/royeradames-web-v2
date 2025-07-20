@@ -1,25 +1,28 @@
 <nav>
-  <ul class="skilled-with__list">
+  <ul class="skill__list">
     @for (item of skillList(); track $index) {
-    <li class="skilled-with__item">
-      <div>
-        <a class="skilled-with__item-link" [href]="item.link" target="_blank">
-          <app-image
-            [name]="item.icon.name"
-            [alt]="item.icon.name"
-            [height]="item.icon.height"
-            [width]="item.icon.width"
-            [type]="'icons'"
-          ></app-image>
-          <h3 class="skilled-with__item-title">
-            {{ item.title }}
-          </h3>
-        </a>
-      </div>
-      <p class="skilled-with__item-description">
-        {{ item.description }}
-      </p>
+    <li class="skill__item">
+      <a class="skill__link" [href]="item.link" target="_blank">
+        <section class="skill">
+          <header class="skill__header">
+            <app-image
+              [name]="item.icon.name"
+              [alt]="item.icon.name"
+              [height]="item.icon.height"
+              [width]="item.icon.width"
+              [type]="'icons'"
+            ></app-image>
+            <h3 class="skill__title">
+              {{ item.title }}
+            </h3>
+          </header>
+          <p class="skill__description">
+            {{ item.description }}
+          </p>
+        </section>
+      </a>
     </li>
+
     }
   </ul>
 </nav>
