@@ -1,6 +1,5 @@
 .hero__message {
-  min-width: 20em;
-  max-width: 28em;
+  max-width: 20em;
   color: var(--Gray-Lighter, #d9dfe8);
 
   /* text-7xl/normal */
