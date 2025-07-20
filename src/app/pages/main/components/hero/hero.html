@@ -35,8 +35,10 @@
     </header>
 
     <div class="hero__content-container">
-      <app-skill-list [skillList]="headerData.hero.currentTechnology"></app-skill-list>
-    
+      <app-skill-list
+        [skillList]="headerData.hero.currentTechnology"
+        title="Current Technologies"
+      ></app-skill-list>
 
       <section>
         <ul class="hero__contact-list">

@@ -21,4 +21,5 @@ export class SkillList {
       link: string;
     }[]
   >();
+  title = input.required<string>();
 }

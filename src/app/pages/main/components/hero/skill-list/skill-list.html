@@ -1,4 +1,4 @@
-<nav>
+<nav [attr.aria-label]="title()">
   <ul class="skill__list">
     @for (item of skillList(); track $index) {
     <li class="skill__item">
@@ -22,7 +22,6 @@
         </section>
       </a>
     </li>
-
     }
   </ul>
 </nav>
