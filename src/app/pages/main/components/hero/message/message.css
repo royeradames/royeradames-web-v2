@@ -1,4 +1,6 @@
 .hero__message {
+  min-width: 20em;
+  max-width: 28em;
   color: var(--Gray-Lighter, #d9dfe8);
 
   /* text-7xl/normal */
@@ -30,6 +32,6 @@
 
 .hero__message svg {
   display: inline;
-  vertical-align: top;
+  vertical-align: super;
   margin: 0 12px;
 }

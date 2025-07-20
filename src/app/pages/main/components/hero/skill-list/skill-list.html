@@ -1,0 +1,27 @@
+<nav class="skilled-with__list">
+  @for (skilledWith of skilledWithSection.sections; track $index) {
+  <li class="skilled-with__item">
+    <header >
+      <a
+        class="skilled-with__item-link"
+        [href]="skilledWith.link"
+        target="_blank"
+      >
+        <app-image
+          [name]="skilledWith.icon.name"
+          [alt]="skilledWith.icon.name"
+          [height]="skilledWith.icon.height"
+          [width]="skilledWith.icon.width"
+          [type]="'icons'"
+        ></app-image>
+        <h3 class="skilled-with__item-title">
+          {{ skilledWith.title }}
+        </h3>
+      </app-image>
+    </header>
+    <p class="skilled-with__item-description">
+      {{ skilledWith.description }}
+    </p>
+  </section>
+  }
+</div>
