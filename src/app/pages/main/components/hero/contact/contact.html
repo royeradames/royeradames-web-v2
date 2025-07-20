@@ -1,21 +1,31 @@
 <ul class="contact__list" aria-label="Contact information">
   @for (item of headerData.hero.contact; track $index) {
   <li class="contact__item">
-    <div class="contact__icon">
-      <app-image
-        [name]="item.icon"
-        [alt]="item.title"
-        [height]="24"
-        [width]="24"
-        [type]="'icons'"
-      ></app-image>
-    </div>
-    <div class="contact__title">
-      {{ item.title }}
-    </div>
-    <div class="contact__info">
-      {{ item.contactInfo }}
-    </div>
+    <a
+      [href]="getContactLink(item)"
+      [target]="item.type === 'address' ? '_blank' : '_self'"
+      [rel]="item.type === 'address' ? 'noopener noreferrer' : ''"
+      class="contact__link"
+      [attr.aria-label]="getAriaLabel(item)"
+    >
+      <div class="contact__icon">
+        <app-image
+          [name]="item.icon"
+          [alt]="item.title"
+          [height]="24"
+          [width]="24"
+          [type]="'icons'"
+        ></app-image>
+      </div>
+      <div class="contact__content">
+        <div class="contact__title">
+          {{ item.title }}
+        </div>
+        <div class="contact__info">
+          {{ item.contactInfo }}
+        </div>
+      </div>
+    </a>
   </li>
   }
 </ul>

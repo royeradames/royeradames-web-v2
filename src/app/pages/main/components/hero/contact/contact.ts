@@ -30,4 +30,34 @@ import footerData from '@shared/data/footer.data';
 export class Contact {
   public headerData = headerData;
   public resumeLinks = footerData.resumeLinks;
+
+  getContactLink(item: any): string {
+    switch (item.type) {
+      case 'email':
+        return `mailto:${item.contactInfo}`;
+      case 'text':
+        // Remove any formatting from phone number for tel: protocol
+        const phoneNumber = item.contactInfo.replace(/[^\d]/g, '');
+        return `tel:+1${phoneNumber}`;
+      case 'address':
+        // Create a Google Maps search link
+        const encodedAddress = encodeURIComponent(item.contactInfo);
+        return `https://maps.google.com/maps?q=${encodedAddress}`;
+      default:
+        return '#';
+    }
+  }
+
+  getAriaLabel(item: any): string {
+    switch (item.type) {
+      case 'email':
+        return `Send email to ${item.contactInfo}`;
+      case 'text':
+        return `Text ${item.contactInfo}`;
+      case 'address':
+        return `View ${item.contactInfo} on map`;
+      default:
+        return item.title;
+    }
+  }
 }

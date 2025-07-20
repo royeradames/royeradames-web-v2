@@ -17,12 +17,42 @@
 .contact__item {
   display: flex;
   min-width: 190px;
-  max-width: 270px;
+  max-width: max-content;
   align-items: center;
   align-content: center;
   gap: 8px;
   flex: 1 0 0;
   flex-wrap: wrap;
+}
+
+.contact__link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+  flex: 1 0 0;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact__link:hover {
+  background-color: rgba(71, 81, 107, 0.2);
+  transform: translateY(-1px);
+}
+
+.contact__link:focus {
+  outline: 2px solid var(--Gray-Light, #acb1c3);
+  outline-offset: 2px;
+}
+
+.contact__link:active {
+  transform: translateY(0);
 }
 
 .contact__icon {
@@ -32,6 +62,11 @@
   gap: 10px;
   border-radius: 100px;
   background: var(--Gray-Dark, #47516b);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contact__link:hover .contact__icon {
+  background: var(--Gray-Lightest, #e2e6ee);
 }
 
 .contact__title {
