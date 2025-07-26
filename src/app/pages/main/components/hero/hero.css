@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   background: url("/assets/background/royeradames-background.svg") lightgray 50% /
     cover no-repeat;
+  padding: 0 16px 160px 16px;
 }
 
 .hero__navigation {
@@ -15,6 +16,12 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.hero__navigation-last-items {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .hero__title {
@@ -27,4 +34,22 @@
   font-weight: var(--font-weight-normal, 400);
   line-height: var(--font-size-5xl, 48px); /* 100% */
   letter-spacing: var(--font-letter-spacing-normal, 0px);
+}
+
+.hero__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import headerData from '@shared/data/header.data';
-import { SocialMediaLinks } from '@shared/components/social-media-links/social-media-links';
 import { Image } from '@shared/components/image/image';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -10,20 +9,17 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { NavigationLinks } from './navigation-links/navigation-links';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MobileMenuButton } from '../mobile-menu/mobile-menu-button/mobile-menu-button';
-import { RouterLink } from '@angular/router';
 import footerData from '@shared/data/footer.data';
-import { Positions } from "./positions/positions";
-import { Message } from "./message/message";
-import { SkillList } from "./skill-list/skill-list";
-import { Contact } from "./contact/contact";
+import { Positions } from './positions/positions';
+import { Message } from './message/message';
+import { SkillList } from './skill-list/skill-list';
+import { Contact } from './contact/contact';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.html',
   styleUrl: './hero.css',
   imports: [
-    SocialMediaLinks,
     Image,
     MatButtonModule,
     MatIconModule,
@@ -34,13 +30,11 @@ import { Contact } from "./contact/contact";
     MatRadioModule,
     FormsModule,
     ReactiveFormsModule,
-    MobileMenuButton,
-    RouterLink,
     Positions,
     Message,
     SkillList,
-    Contact
-],
+    Contact,
+  ],
   standalone: true,
 })
 export class Hero {

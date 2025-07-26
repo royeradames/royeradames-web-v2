@@ -1,5 +1,23 @@
 <app-mobile-menu>
   <main class="main">
+    <header>
+      <nav class="hero__navigation" aria-label="Navigation links">
+        <a [routerLink]="['/']">
+          <app-image
+            [name]="headerData.navigation.logo.name"
+            [alt]="headerData.navigation.logo.alt"
+            [height]="headerData.navigation.logo.height"
+            [width]="headerData.navigation.logo.width"
+            [type]="'companies-logo'"
+          ></app-image>
+        </a>
+        <app-navigation-links
+          [linkList]="headerData.navigation.navigationLinks"
+        ></app-navigation-links>
+        <app-social-media-links />
+        <app-mobile-menu-button />
+      </nav>
+    </header>
     <app-hero></app-hero>
     <app-project-gallery></app-project-gallery>
     <app-resume></app-resume>

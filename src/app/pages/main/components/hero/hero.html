@@ -6,35 +6,22 @@
     [width]="headerData.hero.image.width"
     [type]="'images'"
   ></app-image>
-  <div class="hero__content">
-    <header>
-      <nav class="hero__navigation">
-        <a [routerLink]="['/']">
-          <app-image
-            [name]="headerData.navigation.logo.name"
-            [alt]="headerData.navigation.logo.alt"
-            [height]="headerData.navigation.logo.height"
-            [width]="headerData.navigation.logo.width"
-            [type]="'companies-logo'"
-          ></app-image>
-        </a>
-        <app-navigation-links
-          [linkList]="headerData.navigation.navigationLinks"
-        ></app-navigation-links>
-        <app-navigation-links [linkList]="resumeLinks"></app-navigation-links>
-        <app-social-media-links></app-social-media-links>
-        <app-mobile-menu-button></app-mobile-menu-button>
+  <div class="hero__wrapper">
+    <header class="hero__header">
+      <nav aria-label="Resume links">
+        <app-navigation-links [linkList]="resumeLinks" />
       </nav>
       <h1 class="hero__title">{{ headerData.hero.title }}</h1>
 
-      @if(!!headerData.hero.titleDescription.length){
-      <app-positions></app-positions>
-      }
-
-      <app-message></app-message>
+      <div class="hero__navigation-last-items">
+        @if(!!headerData.hero.titleDescription.length){
+        <app-positions></app-positions>
+        }
+        <app-message />
+      </div>
     </header>
 
-    <div class="hero__content-container">
+    <div class="hero__content">
       <app-skill-list
         [skillList]="headerData.hero.currentTechnology"
         title="Current Technologies"
