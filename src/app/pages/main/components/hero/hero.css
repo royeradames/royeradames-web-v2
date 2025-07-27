@@ -46,10 +46,17 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
+  padding-top: 80px;
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.hero__image {
+  @media (max-width: 2060px) {
+    display: none;
+  }
 }
