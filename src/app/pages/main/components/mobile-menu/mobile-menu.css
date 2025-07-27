@@ -1,8 +1,0 @@
-.main{
-  min-height: 100vh;
-  background-color: #232339;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
