@@ -3,13 +3,31 @@
 <ul class="hero__positions">
   @for (item of titleDescription; track $index) {
   <li class="hero__positions-item">
-    <div class="hero__positions-text">{{ item.position }}</div>
+    <a
+      class="hero__positions-text hero__positions-link"
+      [href]="item.wikiLink"
+      target="_blank"
+      rel="noopener noreferrer"
+      [attr.aria-label]="'Learn more about ' + item.position + ' on Wikipedia'"
+    >
+      {{ item.position }}
+    </a>
 
     @if (!!item?.nestedPositions?.length) {
     <ul class="hero__positions-tags">
-      @for (item of item.nestedPositions; track $index) {
+      @for (nestedItem of item.nestedPositions; track $index) {
       <li class="hero__positions-tag">
-        <span class="hero__positions-text">{{ item }}</span>
+        <a
+          class="hero__positions-text hero__positions-link"
+          [href]="nestedItem.wikiLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="
+            'Learn more about ' + nestedItem.name + ' on Wikipedia'
+          "
+        >
+          {{ nestedItem.name }}
+        </a>
       </li>
       }
     </ul>

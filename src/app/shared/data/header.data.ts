@@ -27,10 +27,21 @@ const headerData = {
     titleDescription: [
       {
         position: 'Full-Stack Developer',
-        nestedPositions: ['Front-End Developer', 'Back-End Developer'],
+        wikiLink: 'https://en.wikipedia.org/wiki/Full-stack_developer',
+        nestedPositions: [
+          {
+            name: 'Front-End Developer',
+            wikiLink: 'https://en.wikipedia.org/wiki/Front-end_web_development',
+          },
+          {
+            name: 'Back-End Developer',
+            wikiLink: 'https://en.wikipedia.org/wiki/Backend_developer',
+          },
+        ],
       },
       {
         position: 'Software Designer',
+        wikiLink: 'https://en.wikipedia.org/wiki/Software_design',
       },
     ],
     message: {

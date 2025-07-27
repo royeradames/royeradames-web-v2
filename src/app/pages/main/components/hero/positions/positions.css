@@ -23,6 +23,28 @@
   -webkit-text-fill-color: transparent;
 }
 
+.hero__positions-link {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero__positions-link:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.2);
+}
+
+.hero__positions-link:focus {
+  outline: 2px solid var(--color-primary, #516cf7);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm, 4px);
+}
+
+.hero__positions-link:active {
+  transform: translateY(0);
+}
+
 .hero__positions-item {
   display: flex;
   padding: var(--spacing-2, 8px) var(--spacing-3, 12px);
