@@ -2,15 +2,19 @@
   <h2 class="sr-only">Project Gallery</h2>
   <ul class="project-gallery__list">
     @for (project of projectGallery; track $index) {
-    <li>
-      <a [href]="project.link" target="_blank">
-        <span class="sr-only">{{ project.name }}</span>
-        <img
-          [src]="`assets/images/${project.image}`"
-          [alt]="project.name"
-          height="300"
-          width="300"
-        />
+    <li class="project-gallery__item">
+      <a [href]="project.link" target="_blank" class="project-gallery__link">
+        <div class="project-gallery__image-container">
+          <img
+            [src]="`assets/images/${project.image}`"
+            [alt]="project.name"
+            class="project-gallery__image"
+            loading="lazy"
+          />
+          <div class="project-gallery__overlay">
+            <span class="project-gallery__title">{{ project.name }}</span>
+          </div>
+        </div>
       </a>
     </li>
     }
