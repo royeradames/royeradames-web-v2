@@ -23,6 +23,7 @@
   font-weight: var(--font-weight-normal, 400);
   line-height: var(--font-line-height-7, 28px); /* 140% */
   letter-spacing: var(--font-letter-spacing-normal, 0px);
+  cursor: pointer;
 }
 
 /* Active link styles */
