@@ -1,17 +1,18 @@
 <section class="footer">
   <header class="footer__header">
     <h2 class="footer__title">{{ footerData.callToAction.title }}</h2>
-    <p class="footer__message">{{ footerData.callToAction.message }}</p>
-    <p class="footer__contact-message">
-      {{ footerData.callToAction.contactMessage }}
-    </p>
-    <a
-      class="footer__contact-email"
-      href="mailto:{{ footerData.callToAction.contactEmail }}"
-      >{{ footerData.callToAction.contactEmail }}</a
-    >
+    <div class="footer__call-to-action">
+      <p class="footer__message">
+        {{ footerData.callToAction.message }}
+      </p>
+      <a
+        class="footer__contact-email"
+        href="mailto:{{ footerData.callToAction.contactEmail }}"
+        >{{ footerData.callToAction.contactEmail }}</a
+      >
+    </div>
   </header>
-  <nav class="footer__resume-links">
+  <nav class="footer__resume-links" aria-label="footer resume links">
     <app-navigation-links [linkList]="resumeLinks"></app-navigation-links>
   </nav>
 </section>
