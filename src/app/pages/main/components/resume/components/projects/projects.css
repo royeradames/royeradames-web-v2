@@ -42,7 +42,7 @@
 
 .project__title {
   color: var(--Gray-Lightest, #e2e6ee);
-  font-family: Outfit;
+  font-family: var(--font-family-sans, Inter);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -53,7 +53,7 @@
 
 .project__message {
   color: var(--Gray-Light, #acb1c3);
-  font-family: "DM Sans";
+  font-family: var(--font-family-sans, Inter);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
