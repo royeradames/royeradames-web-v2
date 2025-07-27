@@ -5,7 +5,7 @@ import { ProjectGallery } from './components/project-gallery/project-gallery';
 import { Resume } from './components/resume/resume';
 import { Footer } from './components/footer/footer';
 import { SocialMediaLinks } from '@shared/components/social-media-links/social-media-links';
-import { MobileMenuButton } from './components/mobile-menu/mobile-menu-button/mobile-menu-button';
+// import { MobileMenuButton } from './components/mobile-menu/mobile-menu-button/mobile-menu-button';
 import { NavigationLinks } from './components/hero/navigation-links/navigation-links';
 import { Image } from '@shared/components/image/image';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -29,7 +29,7 @@ import headerData from '@shared/data/header.data';
     Footer,
     MobileMenu,
     SocialMediaLinks,
-    MobileMenuButton,
+    // MobileMenuButton,
     NavigationLinks,
     Image,
     SocialMediaLinks,
@@ -43,7 +43,7 @@ import headerData from '@shared/data/header.data';
     MatRadioModule,
     FormsModule,
     ReactiveFormsModule,
-    MobileMenuButton,
+    // MobileMenuButton,
     RouterLink,
   ],
 })
