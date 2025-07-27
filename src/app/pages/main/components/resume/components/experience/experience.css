@@ -1,5 +1,5 @@
-.experience__title{
-  color: var(--Gray-Lightest, #E2E6EE);
+.experience__title {
+  color: var(--Gray-Lightest, #e2e6ee);
 
   /* text-3xl/bold */
   font-family: var(--font-family-sans, Inter);
@@ -10,20 +10,20 @@
   letter-spacing: var(--font-letter-spacing-normal, 0px);
 }
 
-.experience__item-title{
-  color: var(--Gray-Light, #ACB1C3);
+.experience__item-title {
+  color: var(--Gray-Light, #acb1c3);
 
-/* text-xl/normal */
-font-family: var(--font-family-sans, Inter);
-font-size: var(--font-size-xl, 20px);
-font-style: normal;
-font-weight: var(--font-weight-normal, 400);
-line-height: var(--font-line-height-7, 28px); /* 140% */
-letter-spacing: var(--font-letter-spacing-normal, 0px);
+  /* text-xl/normal */
+  font-family: var(--font-family-sans, Inter);
+  font-size: var(--font-size-xl, 20px);
+  font-style: normal;
+  font-weight: var(--font-weight-normal, 400);
+  line-height: var(--font-line-height-7, 28px); /* 140% */
+  letter-spacing: var(--font-letter-spacing-normal, 0px);
 }
 
-.experience__item-name{
-  color: var(--Gray-Lightest, #E2E6EE);
+.experience__item-name {
+  color: var(--Gray-Lightest, #e2e6ee);
   font-family: Inter;
   font-size: var(--font-size-xl, 20px);
   font-style: normal;
@@ -32,11 +32,11 @@ letter-spacing: var(--font-letter-spacing-normal, 0px);
   letter-spacing: var(--font-letter-spacing-normal, 0px);
 }
 
-.experience__item-location{
+.experience__item-location {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--Gray-Light, #ACB1C3);
+  color: var(--Gray-Light, #acb1c3);
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
@@ -47,20 +47,19 @@ letter-spacing: var(--font-letter-spacing-normal, 0px);
   letter-spacing: var(--font-letter-spacing-normal, 0px);
 }
 
-.experience__item-achievements{
+.experience__item-achievements {
   min-width: 20em;
   max-width: 28em;
 }
 
-.experience{
+.experience {
   display: flex;
-  padding-right: var(--spacing-4, 16px);
   flex-direction: column;
   align-items: flex-start;
   gap: var(--spacing-4, 16px);
 }
 
-.experience__list{
+.experience__list {
   display: flex;
   padding: 0px var(--spacing-0, 0px);
   flex-direction: column;
@@ -68,7 +67,7 @@ letter-spacing: var(--font-letter-spacing-normal, 0px);
   gap: var(--spacing-8, 32px);
 }
 
-.experience__item{
+.experience__item {
   display: flex;
   justify-content: space-between;
   max-width: var(--breakpoint-xl, 1280px);
@@ -80,11 +79,13 @@ letter-spacing: var(--font-letter-spacing-normal, 0px);
   flex-wrap: wrap;
 }
 
-.experience__item-company{
+.experience__item-company {
   display: flex;
   gap: 16px;
 }
 
-.experience__item-header{    display: flex;
+.experience__item-header {
+  display: flex;
   flex-direction: column;
-  gap: 8px;}
+  gap: 8px;
+}
