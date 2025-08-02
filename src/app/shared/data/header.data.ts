@@ -129,12 +129,14 @@ const headerData = {
         contactInfo: 'CONTACT@ROYERADAMES.COM',
         type: 'email',
       },
-      {
-        icon: 'text-icon.svg',
-        title: 'Text',
-        contactInfo: '(407)801-9345',
-        type: 'text',
-      },
+      // // void it due to the fact that I don't have a phone number. Spam will be a problem
+      //  // goal: new phone number that can mask my number
+      // {
+      //   icon: 'text-icon.svg',
+      //   title: 'Text',
+      //   contactInfo: '(407)801-9345',
+      //   type: 'text',
+      // },
       {
         icon: 'location-icon.svg',
         title: 'Address',
