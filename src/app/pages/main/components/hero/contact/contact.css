@@ -41,11 +41,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.contact__link:hover {
-  background-color: rgba(71, 81, 107, 0.2);
-  transform: translateY(-1px);
-}
-
 .contact__link:focus {
   outline: 2px solid var(--Gray-Light, #acb1c3);
   outline-offset: 2px;
