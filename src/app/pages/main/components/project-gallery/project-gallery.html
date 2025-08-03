@@ -1,22 +1,26 @@
 <section class="project-gallery">
   <h2 class="sr-only">Project Gallery</h2>
-  <ul class="project-gallery__list">
-    @for (project of projectGallery; track $index) {
-    <li class="project-gallery__item">
-      <a [href]="project.link" target="_blank" class="project-gallery__link">
-        <div class="project-gallery__image-container">
-          <img
-            [src]="`assets/images/${project.image}`"
-            [alt]="project.name"
-            class="project-gallery__image"
-            loading="lazy"
-          />
-          <div class="project-gallery__overlay">
-            <span class="project-gallery__title">{{ project.name }}</span>
+  <nav class="project-gallery__list" aria-label="Project Gallery">
+    <ul>
+      @for (project of projectGallery; track $index) {
+      <li>
+        <a class="project-gallery__item" [href]="project.link" target="_blank">
+          <div class="project-gallery__link">
+            <div class="project-gallery__image-container">
+              <img
+                [src]="`assets/images/${project.image}`"
+                [alt]="project.name"
+                class="project-gallery__image"
+                loading="lazy"
+              />
+              <div class="project-gallery__overlay">
+                <span class="project-gallery__title">{{ project.name }}</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </a>
-    </li>
-    }
-  </ul>
+        </a>
+      </li>
+      }
+    </ul>
+  </nav>
 </section>
