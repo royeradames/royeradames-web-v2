@@ -1,9 +1,9 @@
 const projects = [
   {
     image: {
-      name: 'universal-orlando.webp',
-      height: 100,
-      width: 100,
+      name: 'universal-orlando-resort-home.webp',
+      height: 200,
+      width: 350,
     },
     title: 'UNIVERSAL STUDIO ORLANDO WEBSITE',
     link: 'https://www.universalorlando.com/web/en/us',
@@ -21,11 +21,6 @@ const projects = [
     ],
   },
   {
-    image: {
-      name: 'mitsubishi-contract-risk-management.webp',
-      height: 100,
-      width: 100,
-    },
     title: 'MITSUBISHI CONTRACT RISK MANAGEMENT PLATFORM',
     link: '',
     messageList: [
