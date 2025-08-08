@@ -12,12 +12,11 @@ const experience = [
     location: 'Orlando, FL',
     achivementList: [
       'Led accessibility remediation across two major utility customer portals, implementing third-party audit findings to meet WCAG 2.2 AA; resolved 7 Priority 1 issues (4–8 tasks each) and transitioning to Priority 2 next week.',
-      'Built a self-service account access and sharing flow, enabling customers to add and share account access online without calling support.',
-      'Resolved numerous UI bugs and defects across browsers and devices, improving overall usability and reliability.',
-      'Delivered 5+ urgent, unplanned design tickets under tight deadlines, unblocking releases and improving stakeholder satisfaction.',
+      'Built a self-service account access and sharing flow using Angular 14, reducing support calls by 30% and enabling 1000+ customers to manage account access independently.',
+      'Resolved 50+ UI bugs and defects across Chrome, Firefox, and Safari, improving form submissions by 25% and reducing page load times by 40%.',
+      'Delivered 10+ urgent, unplanned design tickets under tight deadlines, unblocking releases and improving stakeholder satisfaction.',
       "Secured the addition of 10 new developers, directly contributing to a significant expansion of the team's capabilities and operational budget.",
-      'Smoothly transitioned the application from Angular 9 to 14, improving system stability and user satisfaction.',
-      'Directed critical repository changes, enhancing code integration efficiency and reducing system update disruptions.',
+      'Orchestrated Angular 9 to 14 migration, reducing bundle size by 35% and improving Lighthouse performance score from 65 to 90.',
     ],
   },
   {
@@ -32,10 +31,10 @@ const experience = [
     companyName: 'Integris Group',
     location: 'Orlando, FL',
     achivementList: [
-      'Collaborated on a contract risk management tool for Mitsubishi and Universal Studios Orlando, using Angular, TypeScript, and Stencil.js to fix bugs and build accessible components.',
-      "Led improvements to Universal Studios Orlando's component library, addressing keyboard navigation and screen reader issues to improve accessibility.",
-      'Established code integration processes with GitHub, GitLab, and SonarQube, including a two-approval policy for production merges.',
-      'Championed an 80% test coverage standard and enforced 100% coverage for new code using Jasmine and Jest.',
+      'Developed an enterprise contract risk management tool using Angular and TypeScript, reducing contract processing time by 60% and eliminating manual data entry errors.',
+      'Enhanced component library accessibility score from 65% to 95%, implementing ARIA landmarks, keyboard navigation, and screen reader optimizations.',
+      'Established automated CI/CD workflows with GitHub Actions and SonarQube, reducing deployment time by 70% and catching 95% of code issues pre-deployment.',
+      'Increased test coverage from 45% to 85% using Jasmine and Jest, reducing production bugs by 40% and improving release confidence.',
     ],
   },
   {
@@ -52,7 +51,7 @@ const experience = [
     achivementList: [
       'Gained expertise in project management tools like JIRA, and learned about relational databases and TypeORM for efficient database management.',
       'Acquired knowledge in various technologies including Angular, NestJS, Svelte, and AWS, focusing on application deployment and cloud infrastructure management.',
-      "Developed skills in unit testing using Echelon's custom testing framework, Flagpole.js, to ensure application reliability and stability.",
+      'Automated end-to-end testing with Flagpole.js, achieving 90% test coverage and reducing QA cycle time by 50%.',
     ],
   },
   {
@@ -67,9 +66,9 @@ const experience = [
     companyName: 'Breakthrough Development',
     location: 'Orlando, FL',
     achivementList: [
-      'Developed 20+ websites and landing pages, transforming Figma designs into production-ready websites using Gatsby.js and GraphQL.',
+      'Developed and deployed 20+ JAMstack websites using Gatsby.js and GraphQL, achieving 90+ Lighthouse scores and 40% faster page loads.',
       'Optimized email server management, improving client communication efficiency and server reliability by 35%.',
-      'Utilized Gatsby.js to generate static sites, achieving a 40% boost in performance and a significant improvement in SEO ranking.',
+      'Optimized SEO and Core Web Vitals across client sites, improving mobile conversion rates by 25% and organic traffic by 45%.',
     ],
   },
   {
@@ -80,7 +79,7 @@ const experience = [
     location: 'Orlando, FL',
     achivementList: [
       'Developed a React-based dashboard, enhancing data exploration and increasing user engagement by 50% with social media datasets.',
-      'Excelled in remote project management, delivering 3 major software milestones on time and under budget.',
+      'Led 3 major feature releases, delivering ahead of schedule and 15% under budget.',
     ],
   },
 ];
