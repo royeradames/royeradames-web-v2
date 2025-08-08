@@ -11,12 +11,13 @@ const experience = [
     companyName: 'PPL Corporation',
     location: 'Orlando, FL',
     achivementList: [
-      'Currently developing a Global Design System (GDS) library using Next.js to improve design consistency and developer productivity, with plans for future production deployment.',
-      'Successfully delivered 5+ unexpected design tickets, significantly boosting team morale and demonstrating proactive project management.',
+      'Led accessibility remediation across two major utility customer portals, implementing third-party audit findings to meet WCAG 2.2 AA; resolved 7 Priority 1 issues (4–8 tasks each) and transitioning to Priority 2 next week.',
+      'Built a self-service account access and sharing flow, enabling customers to add and share account access online without calling support.',
+      'Resolved numerous UI bugs and defects across browsers and devices, improving overall usability and reliability.',
+      'Delivered 5+ urgent, unplanned design tickets under tight deadlines, unblocking releases and improving stakeholder satisfaction.',
       "Secured the addition of 10 new developers, directly contributing to a significant expansion of the team's capabilities and operational budget.",
-      'Smoothly transitioned the application from Angular 12 to 17, improving system stability by 30% and user satisfaction scores by 25%.',
-      'Directed critical repository changes, enhancing code integration efficiency by 15% and reducing system update disruptions by 40%.',
-      'Currently developing a Global Design System (GDS) library using Next.js to improve design consistency and developer productivity, with plans for future production deployment.',
+      'Smoothly transitioned the application from Angular 9 to 14, improving system stability and user satisfaction.',
+      'Directed critical repository changes, enhancing code integration efficiency and reducing system update disruptions.',
     ],
   },
   {
@@ -31,11 +32,10 @@ const experience = [
     companyName: 'Integris Group',
     location: 'Orlando, FL',
     achivementList: [
-      'Contract Risk Management Tool Development: Collaborated on a team developing a tool for Mitsubishi and Universal Studio Orlando, focusing on Angular, TypeScript, and Stencil.js for bug fixes and accessible component creation.',
-      "Universal Studios Component Library Enhancement: Led efforts to improve Universal Studios Orlando's component library, focusing on bug eradication and accessibility, addressing key issues like broken keyboard navigation and screen reader updates.",
-      'Code Integration Streamlining: Established efficient code integration processes using GitHub, GitLab, and SonarQube; implemented a two-approval process for production-ready merges.',
-      'Test Coverage Advocacy: Championed an 80% test coverage standard, ensuring 100% coverage for new tests using Jasmine and Jest.',
-      'Currently developing a Global Design System (GDS) library using Next.js to improve design consistency and developer productivity, with plans for future production deployment.',
+      'Collaborated on a contract risk management tool for Mitsubishi and Universal Studios Orlando, using Angular, TypeScript, and Stencil.js to fix bugs and build accessible components.',
+      "Led improvements to Universal Studios Orlando's component library, addressing keyboard navigation and screen reader issues to improve accessibility.",
+      'Established code integration processes with GitHub, GitLab, and SonarQube, including a two-approval policy for production merges.',
+      'Championed an 80% test coverage standard and enforced 100% coverage for new code using Jasmine and Jest.',
     ],
   },
   {
@@ -69,7 +69,7 @@ const experience = [
     achivementList: [
       'Developed 20+ websites and landing pages, transforming Figma designs into production-ready websites using Gatsby.js and GraphQL.',
       'Optimized email server management, improving client communication efficiency and server reliability by 35%.',
-      'Currently developing a Global Design System (GDS) library using Next.js to improve design consistency and developer productivity, with plans for future production deployment.',
+      'Utilized Gatsby.js to generate static sites, achieving a 40% boost in performance and a significant improvement in SEO ranking.',
     ],
   },
   {
@@ -80,7 +80,7 @@ const experience = [
     location: 'Orlando, FL',
     achivementList: [
       'Developed a React-based dashboard, enhancing data exploration and increasing user engagement by 50% with social media datasets.',
-      'Currently developing a Global Design System (GDS) library using Next.js to improve design consistency and developer productivity, with plans for future production deployment.',
+      'Excelled in remote project management, delivering 3 major software milestones on time and under budget.',
     ],
   },
 ];
