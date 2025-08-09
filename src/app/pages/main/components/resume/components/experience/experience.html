@@ -39,8 +39,8 @@
         </div>
       </header>
       <ul class="experience__item-achievements">
-        @for (achievement of data.achivementList; track $index) {
-        <app-ra-item [isLast]="!($index === data.achivementList.length - 1)">
+        @for (achievement of data.achievementList; track $index) {
+        <app-ra-item [isLast]="!($index === data.achievementList.length - 1)">
           {{ achievement }}
         </app-ra-item>
         }
