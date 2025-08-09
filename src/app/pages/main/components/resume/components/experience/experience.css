@@ -30,6 +30,7 @@
   font-weight: var(--font-weight-medium, 500);
   line-height: var(--font-line-height-7, 28px); /* 140% */
   letter-spacing: var(--font-letter-spacing-normal, 0px);
+  max-width: 18.75rem;
 }
 
 .experience__item-location {
