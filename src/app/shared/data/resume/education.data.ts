@@ -6,7 +6,8 @@ const education = [
       width: 61,
     },
     title: 'PPL In-house Training',
-    startDate: 'Current',
+    startDate: 'Oct 2022',
+    endDate: 'Current',
     achievementList: [
       'Advanced Next.js (The Road to Next): App Router, React Server Components, and performance optimization.',
       'In-house web accessibility: WCAG 2.2 AA training applied to customer portals (landmarks, keyboard/focus, contrast).',
@@ -20,8 +21,8 @@ const education = [
       width: 54,
     },
     title: 'Integris Group In-house Training',
-    startDate: 'Aug 2020',
-    endDate: 'May 2022',
+    startDate: 'May 2022',
+    endDate: 'Sep 2023',
     achievementList: [
       'Enhanced Agile and Scrum methodologies, focusing on adaptability and continuous improvement.',
       'Acquired proficiency in Tridion CMS for collaborative content and knowledge management.',
