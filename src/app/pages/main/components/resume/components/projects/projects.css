@@ -1,9 +1,9 @@
 .projects-list {
   display: flex;
-  padding-right: var(--spacing-4, 16px);
+  padding-right: var(--spacing-4, 1rem);
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-4, 16px);
+  gap: var(--spacing-4, 1rem);
 }
 
 .projects-list__title {
@@ -11,18 +11,18 @@
 
   /* text-3xl/bold */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-3xl, 30px);
+  font-size: var(--font-size-3xl, 1.875rem);
   font-style: normal;
   font-weight: var(--font-weight-bold, 700);
-  line-height: var(--font-line-height-9, 36px); /* 120% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-9, 2.25rem); /* 120% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .projects-list__content {
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 32px var(--spacing-8, 32px);
+  gap: 2rem var(--spacing-8, 2rem);
   flex-wrap: wrap;
 }
 
@@ -40,48 +40,48 @@
 }
 
 .project__content {
-  padding: 16px 28px;
+  padding: 1rem 1.75rem;
 }
 
 .project__title {
-  padding: 16px 28px 0;
+  padding: 1rem 1.75rem 0;
   color: var(--Gray-Lightest, #e2e6ee);
   font-family: var(--font-family-sans, Inter);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
-  line-height: var(--7, 28px); /* 140% */
-  letter-spacing: var(--normal, 0px);
+  line-height: var(--7, 1.75rem); /* 140% */
+  letter-spacing: var(--normal, 0rem);
 }
 
 .project__message {
   color: var(--Gray-Light, #acb1c3);
   font-family: var(--font-family-sans, Inter);
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: var(--6, 24px);
-  letter-spacing: var(--normal, 0px);
+  line-height: var(--6, 1.5rem);
+  letter-spacing: var(--normal, 0rem);
 }
 
 .project__link {
   display: flex;
-  gap: 8px;
-  margin-top: 20px;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
   color: var(--Secondary-Light, #95aafb);
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-sm, 14px);
+  font-size: var(--font-size-sm, 0.875rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px);
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-6, 1.5rem);
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
   align-items: center;
 }
 
 .project__message-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .project__image {

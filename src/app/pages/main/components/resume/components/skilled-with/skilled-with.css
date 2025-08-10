@@ -1,25 +1,25 @@
 .skilled-with {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .skilled-with__title {
   color: var(--Gray-Lightest, #e2e6ee);
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-3xl, 30px);
+  font-size: var(--font-size-3xl, 1.875rem);
   font-style: normal;
   font-weight: var(--font-weight-bold, 700);
-  line-height: var(--font-line-height-9, 36px);
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-9, 2.25rem);
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .skilled-with__list {
   display: flex;
-  max-width: var(--breakpoint-xl, 1280px);
+  max-width: var(--breakpoint-xl, 80rem);
   align-items: flex-start;
   align-content: flex-start;
-  gap: var(--spacing-6, 24px) var(--spacing-4, 16px);
+  gap: var(--spacing-6, 1.5rem) var(--spacing-4, 1rem);
   align-self: stretch;
   flex-wrap: wrap;
 }
@@ -27,19 +27,19 @@
 .skilled-with__item {
   background: var(--Gray-Darker, #2e2e48);
   display: flex;
-  width: 211.896px;
-  padding: var(--spacing-4, 16px);
+  width: 13.2435rem;
+  padding: var(--spacing-4, 1rem);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .skilled-with__item-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   text-decoration: none;
 }
 .skilled-with__item-title {
@@ -48,11 +48,11 @@
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-2xl, 24px);
+  font-size: var(--font-size-2xl, 1.5rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px); /* 150% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-6, 1.5rem); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .skilled-with__item-description {
@@ -62,9 +62,9 @@
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-base, 16px);
+  font-size: var(--font-size-base, 1rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px); /* 150% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-6, 1.5rem); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }

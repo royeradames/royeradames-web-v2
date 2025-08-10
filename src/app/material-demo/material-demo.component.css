@@ -1,6 +1,6 @@
 .container {
   padding: 0;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
@@ -27,7 +27,7 @@
 
 .form-row mat-form-field {
   flex: 1;
-  min-width: 200px;
+  min-width: 12.5rem;
 }
 
 .chips-section, .buttons-section, .progress-section {
@@ -64,7 +64,7 @@ mat-expansion-panel-header mat-icon {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .form-row {
     flex-direction: column;
   }

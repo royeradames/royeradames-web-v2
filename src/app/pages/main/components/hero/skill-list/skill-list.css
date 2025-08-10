@@ -1,9 +1,9 @@
 .skill__list {
   display: flex;
-  max-width: var(--breakpoint-xl, 1280px);
+  max-width: var(--breakpoint-xl, 80rem);
   align-items: flex-start;
   align-content: flex-start;
-  gap: var(--spacing-6, 24px) var(--spacing-4, 16px);
+  gap: var(--spacing-6, 1.5rem) var(--spacing-4, 1rem);
   align-self: stretch;
   flex-wrap: wrap;
 }
@@ -11,17 +11,17 @@
 .skill__item {
   background: var(--Gray-Darker, #2e2e48);
   display: flex;
-  width: 211.896px;
-  padding: var(--spacing-4, 16px);
+  width: 13.2435rem;
+  padding: var(--spacing-4, 1rem);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .skill__item:hover {
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-  transform: translateY(-4px);
+  box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.25rem);
 }
 
 .skill__link {
@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 0.375rem;
 }
 .skill__title {
   color: var(--color-base-white, #fff);
@@ -39,11 +39,11 @@
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-2xl, 24px);
+  font-size: var(--font-size-2xl, 1.5rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px); /* 150% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-6, 1.5rem); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .skill__description {
@@ -53,16 +53,16 @@
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-base, 16px);
+  font-size: var(--font-size-base, 1rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px); /* 150% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-6, 1.5rem); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }

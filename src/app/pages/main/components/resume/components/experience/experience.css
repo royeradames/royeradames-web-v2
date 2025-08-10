@@ -3,11 +3,11 @@
 
   /* text-3xl/bold */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-3xl, 30px);
+  font-size: var(--font-size-3xl, 1.875rem);
   font-style: normal;
   font-weight: var(--font-weight-bold, 700);
-  line-height: var(--font-line-height-9, 36px); /* 120% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-9, 2.25rem); /* 120% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .experience__item-title {
@@ -15,37 +15,37 @@
 
   /* text-xl/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-xl, 20px);
+  font-size: var(--font-size-xl, 1.25rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-7, 28px); /* 140% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-7, 1.75rem); /* 140% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .experience__item-name {
   color: var(--Gray-Lightest, #e2e6ee);
   font-family: Inter;
-  font-size: var(--font-size-xl, 20px);
+  font-size: var(--font-size-xl, 1.25rem);
   font-style: normal;
   font-weight: var(--font-weight-medium, 500);
-  line-height: var(--font-line-height-7, 28px); /* 140% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-7, 1.75rem); /* 140% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
   max-width: 18.75rem;
 }
 
 .experience__item-location {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   color: var(--Gray-Light, #acb1c3);
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-base, 16px);
+  font-size: var(--font-size-base, 1rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px); /* 150% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-6, 1.5rem); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .experience__item-achievements {
@@ -57,36 +57,36 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-4, 16px);
+  gap: var(--spacing-4, 1rem);
 }
 
 .experience__list {
   display: flex;
-  padding: 0px var(--spacing-0, 0px);
+  padding: 0rem var(--spacing-0, 0rem);
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-8, 32px);
+  gap: var(--spacing-8, 2rem);
 }
 
 .experience__item {
   display: flex;
   justify-content: space-between;
-  max-width: var(--breakpoint-xl, 1280px);
-  padding: 0px var(--spacing-0, 0px);
+  max-width: var(--breakpoint-xl, 80rem);
+  padding: 0rem var(--spacing-0, 0rem);
   align-items: flex-start;
   align-content: flex-start;
-  gap: 40px var(--spacing-10, 40px);
+  gap: 2.5rem var(--spacing-10, 2.5rem);
   align-self: stretch;
   flex-wrap: wrap;
 }
 
 .experience__item-company {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .experience__item-header {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }

@@ -1,6 +1,6 @@
 .social-media-links {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
   flex-direction: var(--social-media-links-flex-direction, row);
   justify-content: center;
   align-items: center;
@@ -12,6 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
 }

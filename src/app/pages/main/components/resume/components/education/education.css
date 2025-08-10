@@ -1,15 +1,15 @@
 .education{
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .education__content{
   display: flex;
-  padding: var(--spacing-0, 0px);
+  padding: var(--spacing-0, 0rem);
   align-items: flex-start;
   align-content: flex-start;
-  gap: var(--spacing-10, 40px);
+  gap: var(--spacing-10, 2.5rem);
   align-self: stretch;
   flex-wrap: wrap;
 }
@@ -18,29 +18,29 @@
   display: flex;
   min-width: 20em;
   max-width: 28em;
-  padding: 16px;
+  padding: 1rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1rem;
   flex: 1 0 0;
-  border-radius: var(--radius-none, 0px);
+  border-radius: var(--radius-none, 0rem);
   background: var(--Gray-Darker, #2E2E48);
 }
 
 .education__item-header{
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .education__title{
   color: var(--Gray-Lightest, #E2E6EE);
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-3xl, 30px);
+  font-size: var(--font-size-3xl, 1.875rem);
   font-style: normal;
   font-weight: var(--font-weight-bold, 700);
-  line-height: var(--font-line-height-9, 36px);
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-9, 2.25rem);
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .education__item-title{
@@ -48,24 +48,24 @@
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-2xl, 24px);
+  font-size: var(--font-size-2xl, 1.5rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px); /* 150% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-6, 1.5rem); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .education__item-achievements{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .education__item-content{
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 

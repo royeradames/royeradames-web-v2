@@ -1,17 +1,17 @@
 .hero {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   flex-direction: row-reverse;
   justify-content: center;
   flex-wrap: wrap;
   background: url("/assets/background/royeradames-background.svg") lightgray 50% /
     cover no-repeat;
-  padding: 0 16px 160px 16px;
+  padding: 0 1rem 10rem 1rem;
 }
 
 .hero__navigation {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
 .hero__navigation-last-items {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 3rem;
 }
 
 .hero__title {
@@ -29,34 +29,34 @@
 
   /* text-5xl/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-5xl, 48px);
+  font-size: var(--font-size-5xl, 3rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-size-5xl, 48px); /* 100% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-size-5xl, 3rem); /* 100% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .hero__header {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding-top: 80px;
+  gap: 5rem;
+  padding-top: 5rem;
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .hero__image {
-  @media (max-width: 2060px) {
+  @media (max-width: 128.75rem) {
     display: none;
   }
 }

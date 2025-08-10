@@ -28,27 +28,27 @@ html, body {
 
   /* Typography */
   --font-family-sans: Inter, "Helvetica Neue", sans-serif;
-  --font-size-base: 16px;
-  --font-size-2xl: 24px;
-  --font-size-3xl: 30px;
+  --font-size-base: 1rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --font-line-height-6: 24px;
-  --font-line-height-9: 36px;
-  --font-letter-spacing-normal: 0px;
+  --font-line-height-6: 1.5rem;
+  --font-line-height-9: 2.25rem;
+  --font-letter-spacing-normal: 0rem;
 
   /* Spacing */
-  --spacing-4: 16px;
-  --spacing-6: 24px;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
 
   /* Breakpoints */
-  --breakpoint-xl: 1280px;
+  --breakpoint-xl: 80rem;
 }
 
 /* Custom Material component overrides */
 .mat-mdc-card {
   margin: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .mat-mdc-button {
@@ -56,11 +56,11 @@ html, body {
 }
 
 .mat-mdc-raised-button {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 
 .mat-toolbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 /* Ensure proper spacing and layout */
@@ -78,8 +78,8 @@ html, body {
 }
 
 .mat-mdc-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 
 .mat-mdc-button {

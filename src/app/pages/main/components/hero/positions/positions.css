@@ -1,7 +1,7 @@
 .hero__positions {
   display: flex;
   align-items: center;
-  gap: var(--spacing-2, 8px);
+  gap: var(--spacing-2, 0.5rem);
   align-self: stretch;
   flex-wrap: wrap;
 }
@@ -9,11 +9,11 @@
 .hero__positions-text {
   /* text-sm/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-sm, 14px);
+  font-size: var(--font-size-sm, 0.875rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-5, 20px); /* 142.857% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-5, 1.25rem); /* 142.857% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
   background: var(
     --Gradient-Primary,
     linear-gradient(90deg, #a478e8 0%, #516cf7 100%)
@@ -31,14 +31,14 @@
 }
 
 .hero__positions-link:hover {
-  transform: translateY(-1px);
+  transform: translateY(-0.0625rem);
   filter: brightness(1.2);
 }
 
 .hero__positions-link:focus {
-  outline: 2px solid var(--color-primary, #516cf7);
-  outline-offset: 2px;
-  border-radius: var(--radius-sm, 4px);
+  outline: 0.125rem solid var(--color-primary, #516cf7);
+  outline-offset: 0.125rem;
+  border-radius: var(--radius-sm, 0.25rem);
 }
 
 .hero__positions-link:active {
@@ -47,10 +47,10 @@
 
 .hero__positions-item {
   display: flex;
-  padding: var(--spacing-2, 8px) var(--spacing-3, 12px);
+  padding: var(--spacing-2, 0.5rem) var(--spacing-3, 0.75rem);
   align-items: center;
-  gap: var(--spacing-3, 12px);
-  border-radius: var(--radius-2xl, 16px);
+  gap: var(--spacing-3, 0.75rem);
+  border-radius: var(--radius-2xl, 1rem);
   background: hsl(240deg 22% 13% / 54%);
   max-width: 100%;
   width: fit-content;
@@ -62,13 +62,13 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-2, 8px);
-  padding: var(--spacing-1, 4px) var(--spacing-3, 12px);
+  gap: var(--spacing-2, 0.5rem);
+  padding: var(--spacing-1, 0.25rem) var(--spacing-3, 0.75rem);
   max-width: 100%;
 }
 
 .hero__positions-tag {
-  border-radius: var(--radius-full, 9999px);
+  border-radius: var(--radius-full, 624.9375rem);
   background: hsl(240, 22%, 23%);
-  padding: var(--spacing-1, 4px) var(--spacing-3, 12px);
+  padding: var(--spacing-1, 0.25rem) var(--spacing-3, 0.75rem);
 }

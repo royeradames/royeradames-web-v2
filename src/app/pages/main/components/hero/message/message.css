@@ -4,11 +4,11 @@
 
   /* text-7xl/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-7xl, 72px);
+  font-size: var(--font-size-7xl, 4.5rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-size-7xl, 72px); /* 100% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-size-7xl, 4.5rem); /* 100% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .hero__message strong {
@@ -22,15 +22,15 @@
 
   /* text-7xl/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-7xl, 72px);
+  font-size: var(--font-size-7xl, 4.5rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-size-7xl, 72px);
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-size-7xl, 4.5rem);
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .hero__message svg {
   display: inline;
   vertical-align: super;
-  margin: 0 12px;
+  margin: 0 0.75rem;
 }

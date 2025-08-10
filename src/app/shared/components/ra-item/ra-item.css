@@ -1,42 +1,42 @@
 .item{
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
   align-self: stretch;
   color: var(--Gray-Light, #ACB1C3);
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-base, 16px);
+  font-size: var(--font-size-base, 1rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px); /* 150% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-6, 1.5rem); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
 
 .item__symbols{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 0.25rem;
   flex-shrink: 0;
 }
 
 .item__dot{
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   background-color: var(--Gray-Light, #ACB1C3);
   border-radius: 50%;
   flex-shrink: 0;
-  margin-top: 4px;
+  margin-top: 0.25rem;
 }
 
 .item__divider{
-  width: 2px;
+  width: 0.125rem;
   height: 100%;
   background-color: var(--Gray-Light, #ACB1C3);
 }
 
 
 .item__text{
-  padding-bottom: var(--spacing-2, 8px);
+  padding-bottom: var(--spacing-2, 0.5rem);
 }

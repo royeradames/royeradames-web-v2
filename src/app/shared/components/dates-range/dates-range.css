@@ -1,16 +1,16 @@
 .date{
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   align-self: stretch;
   color: var(--Gray-Light, #ACB1C3);
   text-align: center;
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
-  font-size: var(--font-size-base, 16px);
+  font-size: var(--font-size-base, 1rem);
   font-style: normal;
   font-weight: var(--font-weight-normal, 400);
-  line-height: var(--font-line-height-6, 24px); /* 150% */
-  letter-spacing: var(--font-letter-spacing-normal, 0px);
+  line-height: var(--font-line-height-6, 1.5rem); /* 150% */
+  letter-spacing: var(--font-letter-spacing-normal, 0rem);
 }
