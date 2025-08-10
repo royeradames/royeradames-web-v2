@@ -5,9 +5,23 @@ const education = [
       height: 40,
       width: 61,
     },
-    title: 'Bloom Institute of Technology',
+    title: 'PPL In-house Training',
+    startDate: 'Current',
+    achievementList: [
+      'Advanced Next.js (The Road to Next): App Router, React Server Components, and performance optimization.',
+      'In-house web accessibility: WCAG 2.2 AA training applied to customer portals (landmarks, keyboard/focus, contrast).',
+      'Headless CMS: Storyblok fundamentals, content modeling/schema design, and visual preview authoring workflows.',
+    ],
+  },
+  {
+    logo: {
+      name: 'integris-logo.svg',
+      height: 40,
+      width: 54,
+    },
+    title: 'Integris Group In-house Training',
     startDate: 'Aug 2020',
-    endDate: 'current',
+    endDate: 'May 2022',
     achievementList: [
       'Enhanced Agile and Scrum methodologies, focusing on adaptability and continuous improvement.',
       'Acquired proficiency in Tridion CMS for collaborative content and knowledge management.',
@@ -15,7 +29,6 @@ const education = [
       'Focused on accessible web development, learning to create and test websites for compatibility with assistive technology.',
     ],
   },
-
   {
     logo: {
       name: 'echelon-logo-small.svg',
