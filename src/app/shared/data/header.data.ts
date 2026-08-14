@@ -15,6 +15,12 @@ const headerData = {
         isAnchorLink: false,
       },
       {
+        name: 'Gallery',
+        link: 'https://private-reel-royer.royeraadames.chatgpt.site',
+        isExternal: true,
+        isAnchorLink: false,
+      },
+      {
         name: 'Publications',
         link: 'https://royeraadames.medium.com/',
         isExternal: true,
