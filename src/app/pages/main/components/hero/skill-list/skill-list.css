@@ -36,6 +36,8 @@
 .skill__title {
   color: var(--color-base-white, #fff);
   text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
 
   /* text-base/normal */
   font-family: var(--font-family-sans, Inter);
