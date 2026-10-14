@@ -62,6 +62,11 @@
   gap: 1rem;
 }
 
+/* The li is now the ra-item host; keep the content width it had inside the old app-ra-item wrapper. */
+.education__item-achievements > li{
+  align-self: auto;
+}
+
 .education__item-content{
   display: flex;
   flex-direction: column;
